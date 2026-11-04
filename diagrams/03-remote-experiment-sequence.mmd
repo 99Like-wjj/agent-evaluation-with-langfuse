@@ -1,0 +1,26 @@
+sequenceDiagram
+  participant U as UI / Skill
+  participant L as Langfuse
+  participant B as BFF / runner
+  participant A as Agent 应用
+  participant E as 平台评估任务
+  U->>L: 选择测试集，发起实验
+  L->>B: Dataset 信息与运行配置
+  par 受理响应
+    B-->>L: 202 已受理
+  and 后台任务
+    B->>L: 读取样本与配置中指定的版本
+    B->>A: HTTP/SSE 分支：问题与 traceparent
+    par 流式返回
+      A-->>B: 回答与完成状态
+    and Agent 观测导出
+      A-->>L: 模型与工具观测（异步）
+    and BFF 后台投影
+      B-->>L: 业务根观测与状态（异步）
+    end
+    B->>L: SDK 管理本次样本与输出关联
+  end
+  Note over L,E: 按 Rule 与可见输入排程，不保证等待全部子观测
+  L->>E: 执行评价
+  E-->>L: 评价完成后保存 Score
+  U->>L: 读取/对账，结果可能未齐备

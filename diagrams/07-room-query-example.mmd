@@ -1,0 +1,11 @@
+flowchart TB
+  Q[任务：查询满足条件的会议室，先不要预约]
+  Q --> APP[应用接收原问题]
+  APP --> FIX[按时段列出候选房间：A满足，B无投影，C不空闲]
+  Q --> PLAN[选择本例评价内容]
+  FIX --> REF[参考：推荐结果、容量、设备、时间]
+  PLAN --> RESULT[任务结果与回答质量]
+  PLAN --> TOOL[查询工具参数]
+  PLAN --> ACTION[调用记录与预约状态]
+  REF --> RESULT
+  N[全部人为构造：未执行，无 Score]

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1110" viewBox="0 0 1440 1110" role="img"><title>示例：查会议室，但先不要预约</title><desc>问题、房间资料和下面的回答均为人工构造，用于说明评测设计。</desc>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC","Segoe UI",sans-serif}</style>
+<defs><marker id="a0" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#356eb2"/></marker><marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#167f7d"/></marker><marker id="a2" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a87024"/></marker><marker id="a3" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#775a9c"/></marker><marker id="a4" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#203848"/></marker><marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#5b7280"/></marker></defs>
+<rect width="1440" height="1110" fill="#fbfcfc"/>
+<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">示例：查会议室，但先不要预约</text>
+<text x="48" y="108" font-size="21" fill="#5b7280" text-anchor="start">问题、房间资料和下面的回答均为人工构造，用于说明评测设计。</text>
+<rect x="1240" y="36" width="150" height="40" rx="20" fill="#edf2f4" stroke="none" stroke-width="2"/>
+<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">合成案例</text>
+<line x1="48" x2="1392" y1="140" y2="140" stroke="#dce5e9"/>
+<rect x="60" y="190" width="1320" height="170" rx="15" fill="#fff" stroke="#203848" stroke-width="2"/>
+<text x="84" y="234" font-size="25" fill="#203848" text-anchor="start" font-weight="700">用户任务</text>
+<text x="84" y="274" font-size="22" fill="#203848" text-anchor="start">查询北京时间 2026-11-10 14:00—15:00 可容纳 6 人且有投影仪的会议室。</text>
+<text x="84" y="306" font-size="22" fill="#203848" text-anchor="start">列出房间名称并说明推荐理由，先不要预约。</text>
+<rect x="60" y="440" width="600" height="300" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="84" y="484" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">候选房间（合成工具返回）</text>
+<text x="90" y="540" font-size="22" fill="#5b7280" text-anchor="start" font-weight="700">房间</text>
+<text x="230" y="540" font-size="22" fill="#5b7280" text-anchor="start" font-weight="700">容量</text>
+<text x="380" y="540" font-size="22" fill="#5b7280" text-anchor="start" font-weight="700">投影仪</text>
+<text x="530" y="540" font-size="22" fill="#5b7280" text-anchor="start" font-weight="700">空闲</text>
+<text x="90" y="596" font-size="23" fill="#167f7d" text-anchor="start" font-weight="700">A 室</text>
+<text x="230" y="596" font-size="23" fill="#167f7d" text-anchor="start" font-weight="700">8 人</text>
+<text x="380" y="596" font-size="23" fill="#167f7d" text-anchor="start" font-weight="700">有</text>
+<text x="530" y="596" font-size="23" fill="#167f7d" text-anchor="start" font-weight="700">是</text>
+<text x="90" y="649" font-size="23" fill="#203848" text-anchor="start">B 室</text>
+<text x="230" y="649" font-size="23" fill="#203848" text-anchor="start">6 人</text>
+<text x="380" y="649" font-size="23" fill="#203848" text-anchor="start">无</text>
+<text x="530" y="649" font-size="23" fill="#203848" text-anchor="start">是</text>
+<text x="90" y="702" font-size="23" fill="#203848" text-anchor="start">C 室</text>
+<text x="230" y="702" font-size="23" fill="#203848" text-anchor="start">10 人</text>
+<text x="380" y="702" font-size="23" fill="#203848" text-anchor="start">有</text>
+<text x="530" y="702" font-size="23" fill="#203848" text-anchor="start">否</text>
+<rect x="780" y="440" width="600" height="300" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
+<text x="804" y="484" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">这条任务需要检查什么</text>
+<text x="804" y="524" font-size="22" fill="#203848" text-anchor="start">推荐结果是否符合人数和设备要求</text>
+<text x="804" y="556" font-size="22" fill="#203848" text-anchor="start">查询日期、时段、时区是否准确</text>
+<text x="804" y="588" font-size="22" fill="#203848" text-anchor="start">是否尝试预约，是否新增预约</text>
+<text x="804" y="620" font-size="22" fill="#203848" text-anchor="start">回答是否清楚、完整并回应问题</text>
+<polyline points="340,360 340,440" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<rect x="233.0" y="391" width="214" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="340" y="411" font-size="20" fill="#167f7d" text-anchor="middle">应用通过工具取得资料</text>
+<polyline points="1080,360 1080,440" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
+<rect x="973.0" y="391" width="214" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="1080" y="411" font-size="20" fill="#775a9c" text-anchor="middle">任务要求决定评价标准</text>
+<rect x="60" y="840" width="1320" height="150" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="84" y="884" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">一段用于讲解的回答</text>
+<text x="84" y="924" font-size="22" fill="#203848" text-anchor="start">推荐 A 室：可容纳 8 人，有投影仪，且在指定时段空闲。本次只做查询。</text>
+<text x="48" y="1088" font-size="17" fill="#5b7280" text-anchor="start">回答中写“只做查询”不能证明没有预约；实际评价需要完整调用记录和业务状态。</text>
+</svg>

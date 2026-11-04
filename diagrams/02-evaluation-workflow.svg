@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1190" viewBox="0 0 1440 1190" role="img"><title>一批评测任务如何准备和运行</title><desc>Dataset-only 可以独立交付；完整构建在采集和设计后发布或复用测试集。</desc>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC","Segoe UI",sans-serif}</style>
+<defs><marker id="a0" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#356eb2"/></marker><marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#167f7d"/></marker><marker id="a2" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a87024"/></marker><marker id="a3" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#775a9c"/></marker><marker id="a4" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#203848"/></marker><marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#5b7280"/></marker></defs>
+<rect width="1440" height="1190" fill="#fbfcfc"/>
+<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">一批评测任务如何准备和运行</text>
+<text x="48" y="108" font-size="21" fill="#5b7280" text-anchor="start">Dataset-only 可以独立交付；完整构建在采集和设计后发布或复用测试集。</text>
+<rect x="1240" y="36" width="150" height="40" rx="20" fill="#edf2f4" stroke="none" stroke-width="2"/>
+<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">现有工作流</text>
+<line x1="48" x2="1392" y1="140" y2="140" stroke="#dce5e9"/>
+<rect x="60" y="220" width="380" height="170" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="84" y="264" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">整理任务</text>
+<text x="84" y="304" font-size="22" fill="#203848" text-anchor="start">保留原问题、参考和来源</text>
+<text x="84" y="336" font-size="22" fill="#203848" text-anchor="start">用稳定编号关联后续结果</text>
+<rect x="530" y="220" width="380" height="170" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="554" y="264" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">采集应用响应</text>
+<text x="554" y="304" font-size="22" fill="#203848" text-anchor="start">检查目标能力与操作范围</text>
+<text x="554" y="336" font-size="22" fill="#203848" text-anchor="start">保存原题的实际返回</text>
+<rect x="1000" y="220" width="380" height="170" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
+<text x="1024" y="264" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">设计与绑定评估器</text>
+<text x="1024" y="304" font-size="22" fill="#203848" text-anchor="start">审阅证据，细化评价标准</text>
+<text x="1024" y="336" font-size="22" fill="#203848" text-anchor="start">绑定模型与输入映射</text>
+<rect x="60" y="540" width="380" height="190" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="84" y="584" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">独立发布 Dataset</text>
+<text x="84" y="624" font-size="22" fill="#203848" text-anchor="start">发布样本并读回版本</text>
+<text x="84" y="656" font-size="22" fill="#203848" text-anchor="start">不依赖应用采集或裁判模型</text>
+<text x="84" y="688" font-size="22" fill="#203848" text-anchor="start">可以在这里交付</text>
+<rect x="1000" y="540" width="380" height="190" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
+<text x="1024" y="584" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">发布测试集与规则</text>
+<text x="1024" y="624" font-size="22" fill="#203848" text-anchor="start">创建或复用源 Dataset</text>
+<text x="1024" y="656" font-size="22" fill="#203848" text-anchor="start">发布 Evaluator / Rule</text>
+<text x="1024" y="688" font-size="22" fill="#203848" text-anchor="start">读回并固定配置</text>
+<rect x="530" y="540" width="380" height="190" rx="15" fill="#fff" stroke="#a87024" stroke-width="2"/>
+<text x="554" y="584" font-size="25" fill="#a87024" text-anchor="start" font-weight="700">显式启动实验</text>
+<text x="554" y="624" font-size="22" fill="#203848" text-anchor="start">build 不自动启动 Run</text>
+<text x="554" y="656" font-size="22" fill="#203848" text-anchor="start">正式运行与设计期采集分开</text>
+<rect x="530" y="885" width="380" height="170" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="554" y="929" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">读取结果并分析</text>
+<text x="554" y="969" font-size="22" fill="#203848" text-anchor="start">核对本次运行和评价目标</text>
+<text x="554" y="1001" font-size="22" fill="#203848" text-anchor="start">解释成绩、缺分与错误</text>
+<polyline points="440,305 530,305" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<rect x="442.0" y="264" width="86" height="27" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="485" y="282" font-size="18" fill="#167f7d" text-anchor="middle">完整构建</text>
+<polyline points="910,305 1000,305" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
+<polyline points="250,390 250,540" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<rect x="178.2" y="457" width="143.60000000000002" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="250" y="477" font-size="20" fill="#356eb2" text-anchor="middle">Dataset-only</text>
+<polyline points="1190,390 1190,540" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
+<polyline points="1000,635 910,635" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round"/>
+<polyline points="720,730 720,885" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round"/>
+<rect x="656.8" y="794" width="126.4" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="720" y="814" font-size="20" fill="#a87024" text-anchor="middle">收集 / 对账</text>
+<rect x="60" y="885" width="380" height="170" rx="12" fill="#fff7e9" stroke="#e8d6b8" stroke-width="2"/>
+<text x="80" y="917" font-size="21" fill="#a87024" text-anchor="start">完整构建可复用同一账本中</text>
+<text x="80" y="948" font-size="21" fill="#a87024" text-anchor="start">已经发布的源测试集，</text>
+<text x="80" y="979" font-size="21" fill="#a87024" text-anchor="start">仍需核对拥有关系与版本。</text>
+<text x="48" y="1168" font-size="17" fill="#5b7280" text-anchor="start">完整构建不要求先发布测试集；模型绑定未完成时，也可保留设计并独立发布 Dataset。</text>
+</svg>

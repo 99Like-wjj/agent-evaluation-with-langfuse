@@ -1,0 +1,63 @@
+{
+  "artifact_kind": "NON_EXECUTION_PLACEHOLDER",
+  "case_uid": "demo-room-query-001",
+  "application_executed": false,
+  "judge_executed": false,
+  "programmatic_checks_executed": false,
+  "dataset_id": null,
+  "run_id": null,
+  "dataset_item_id": null,
+  "trace_id": null,
+  "observation_id": null,
+  "metrics": [
+    {
+      "metric_key": "correctness",
+      "state": "NOT_RUN",
+      "score_id": null,
+      "value": null,
+      "comment": null
+    },
+    {
+      "metric_key": "completeness",
+      "state": "NOT_RUN",
+      "score_id": null,
+      "value": null,
+      "comment": null
+    },
+    {
+      "metric_key": "instruction_adherence",
+      "state": "NOT_RUN",
+      "score_id": null,
+      "value": null,
+      "comment": null
+    },
+    {
+      "metric_key": "relevance",
+      "state": "NOT_RUN",
+      "score_id": null,
+      "value": null,
+      "comment": null
+    },
+    {
+      "metric_key": "task_result_consistency",
+      "state": "NOT_RUN",
+      "score_id": null,
+      "value": null,
+      "comment": null
+    },
+    {
+      "metric_key": "tool_input_accuracy",
+      "state": "NOT_RUN",
+      "score_id": null,
+      "value": null,
+      "comment": null
+    },
+    {
+      "metric_key": "action_boundary",
+      "state": "NOT_RUN",
+      "score_id": null,
+      "value": null,
+      "comment": null
+    }
+  ]
+}

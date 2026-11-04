@@ -1,0 +1,9 @@
+flowchart TB
+  U[用户 / 测试问题] --> B[BFF：入口、会话、流式响应]
+  B --> A[Agent：模型、工具、子任务]
+  B -->|业务状态| T[Langfuse：Trace / Observation]
+  A -->|SDK 回调| T
+  D[Langfuse：Dataset / Experiment] -->|远程实验触发| B
+  T --> E[Langfuse：评估器、规则与 Score]
+  S[Skill：整理样本与设计规则] --> D
+  S <-->|发布规则 / 读结果| E

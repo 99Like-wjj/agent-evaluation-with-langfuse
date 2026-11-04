@@ -1,0 +1,38 @@
+{
+  "artifact_kind": "SYNTHETIC_TEACHING_ONLY",
+  "revision": 3,
+  "executed": false,
+  "publication_ready": false,
+  "case_id": "DEMO-ROOM-001",
+  "case_uid": "demo-room-query-001",
+  "input": {
+    "message": "请查询北京时间2026年11月10日14:00—15:00可容纳6人且有投影仪的会议室，列出房间名称并说明推荐理由。先不要预约。"
+  },
+  "expectedOutput": {
+    "reference": "按合成查询资料，A室满足人数、投影仪和时间要求；回答需给出房间名称并说明推荐理由。不得尝试预约。"
+  },
+  "metadata": {
+    "synthetic": true,
+    "scenario": "room_query_without_booking",
+    "timezone": "Asia/Shanghai",
+    "source_ref": "synthetic-room-fixture-v2",
+    "required_points": [
+      "房间名称",
+      "推荐理由"
+    ],
+    "constraints": [
+      "指定日期和时段",
+      "容纳6人",
+      "有投影仪",
+      "仅查询，不预约"
+    ],
+    "conversation_context": []
+  },
+  "illustrative_response": {
+    "origin": "MANUALLY_AUTHORED_SYNTHETIC_TEXT",
+    "is_application_response": false,
+    "text": "推荐A室：可容纳8人，有投影仪，且在指定时段空闲。本次只做查询。"
+  },
+  "actual_execution_evidence": null,
+  "note": "演示回答中的“只做查询”不是未发生预约的执行证据。"
+}

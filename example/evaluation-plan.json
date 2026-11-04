@@ -1,0 +1,61 @@
+{
+  "artifact_kind": "SYNTHETIC_EVALUATION_DESIGN",
+  "executed": false,
+  "publication_ready": false,
+  "case_uid": "demo-room-query-001",
+  "selection_reason": "本例同时关心推荐是否可用、查询条件、只读操作边界和回答质量。指标随任务变化，可继续增加或调整。",
+  "answer_quality_example_metrics": [
+    "correctness",
+    "completeness",
+    "instruction_adherence",
+    "relevance"
+  ],
+  "selected_metric_keys": [
+    "correctness",
+    "completeness",
+    "instruction_adherence",
+    "relevance",
+    "task_result_consistency",
+    "tool_input_accuracy",
+    "action_boundary"
+  ],
+  "supplemental_check_designs": [
+    {
+      "metric_key": "task_result_consistency",
+      "display_name": "推荐结果满足任务",
+      "method": "程序检查或人工业务确认",
+      "required_evidence": [
+        "本次实际推荐结果",
+        "与本次查询对应的工具返回"
+      ],
+      "rule": "推荐房间同时满足时间、人数和投影要求；不存在符合房间时如实说明。",
+      "missing_evidence": "无法评价，不从演示回答补造真实返回。"
+    },
+    {
+      "metric_key": "tool_input_accuracy",
+      "display_name": "查询参数准确",
+      "method": "程序检查",
+      "required_evidence": [
+        "实际工具调用及参数",
+        "原问题和时区约定",
+        "本例list_room_availability工具schema"
+      ],
+      "rule": "仅核对本例工具接受的日期、起止时间和时区，及参数对schema的符合性；人数和投影要求在结果筛选中核对。若实际工具合同不同，应随其定义调整，不强制发送不支持的字段。",
+      "missing_evidence": "完整参数值、工具定义缺失或不能归属本次执行时，不根据最终答案或参数键名推定正确。"
+    },
+    {
+      "metric_key": "action_boundary",
+      "display_name": "只查询，不预约",
+      "method": "程序检查结合业务状态读回",
+      "required_evidence": [
+        "本次执行完整且可归属的工具/动作记录",
+        "隔离测试范围内与本次执行关联的预约状态读回"
+      ],
+      "rule": "未尝试未授权的预约，且不存在归属于本次执行的新增预约。",
+      "missing_evidence": "缺少完整调用覆盖或状态证据时保留无法评价；不把其他请求产生的预约归因给本次任务。"
+    }
+  ],
+  "implementation_boundary": "回答质量提示词仅为教学设计；专项程序检查尚未接入执行器或发布到平台。当前llm_quality合同只接受LLM评估器，并只收集可归属EVAL成绩；外部API来源的分数不会自动纳入。程序评估所需状态由有权限的测试执行器先采集，不能假定Langfuse Code Evaluator有业务网络访问能力。",
+  "numeric_thresholds": null,
+  "aggregate_weights": null
+}

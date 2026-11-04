@@ -1,0 +1,58 @@
+[
+  {
+    "file": "01-system-architecture",
+    "title": "应用、观测和评测的整体关系",
+    "nature": "根据项目代码绘制；公司标识已匿名化",
+    "svg": "01-system-architecture.svg",
+    "png": "01-system-architecture.png",
+    "mermaid": "01-system-architecture.mmd"
+  },
+  {
+    "file": "02-evaluation-workflow",
+    "title": "独立测试集与完整构建的两条路径",
+    "nature": "依据 StageRunner 实际分支绘制",
+    "svg": "02-evaluation-workflow.svg",
+    "png": "02-evaluation-workflow.png",
+    "mermaid": "02-evaluation-workflow.mmd"
+  },
+  {
+    "file": "03-remote-experiment-sequence",
+    "title": "远程实验中的职责与异步到达",
+    "nature": "仅示意 HTTP/SSE 分支；内部会话分支另有路径",
+    "svg": "03-remote-experiment-sequence.svg",
+    "png": "03-remote-experiment-sequence.png",
+    "mermaid": "03-remote-experiment-sequence.mmd"
+  },
+  {
+    "file": "04-evaluation-object-model",
+    "title": "测试样本、实验和成绩的关联",
+    "nature": "突出本项目使用的 Run Item / 目标观测关系",
+    "svg": "04-evaluation-object-model.svg",
+    "png": "04-evaluation-object-model.png",
+    "mermaid": "04-evaluation-object-model.mmd"
+  },
+  {
+    "file": "05-agent-evaluation-map",
+    "title": "Agent 评测方向与所需材料",
+    "nature": "通用方法参考；非固定数量，非项目已上线能力清单",
+    "svg": "05-agent-evaluation-map.svg",
+    "png": "05-agent-evaluation-map.png",
+    "mermaid": "05-agent-evaluation-map.mmd"
+  },
+  {
+    "file": "06-skill-modules",
+    "title": "AI 判断、通用服务与平台接口",
+    "nature": "按职责展示协作；接口不与某一行服务一一绑定",
+    "svg": "06-skill-modules.svg",
+    "png": "06-skill-modules.png",
+    "mermaid": "06-skill-modules.mmd"
+  },
+  {
+    "file": "07-room-query-example",
+    "title": "会议室查询任务的合成评测示例",
+    "nature": "未执行、未评分；工具资料和回答都不是实测结果",
+    "svg": "07-room-query-example.svg",
+    "png": "07-room-query-example.png",
+    "mermaid": "07-room-query-example.mmd"
+  }
+]

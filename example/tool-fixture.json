@@ -1,0 +1,68 @@
+{
+  "artifact_kind": "HAND_AUTHORED_SYNTHETIC_ENVIRONMENT",
+  "source_ref": "synthetic-room-fixture-v2",
+  "is_real_tool_result": false,
+  "tool_contract": {
+    "name": "list_room_availability",
+    "description": "按日期、时段和时区列出候选房间及属性、可用状态；不按人数、投影设备或空闲状态过滤。Agent依据用户条件筛选。",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "string",
+          "description": "YYYY-MM-DD"
+        },
+        "start_time": {
+          "type": "string",
+          "description": "HH:mm"
+        },
+        "end_time": {
+          "type": "string",
+          "description": "HH:mm"
+        },
+        "timezone": {
+          "type": "string",
+          "description": "IANA timezone name"
+        }
+      },
+      "required": [
+        "date",
+        "start_time",
+        "end_time",
+        "timezone"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "planned_request": {
+    "date": "2026-11-10",
+    "start_time": "14:00",
+    "end_time": "15:00",
+    "timezone": "Asia/Shanghai"
+  },
+  "task_constraints": {
+    "attendees": 6,
+    "projector_required": true
+  },
+  "rooms": [
+    {
+      "name": "A室",
+      "capacity": 8,
+      "has_projector": true,
+      "available": true
+    },
+    {
+      "name": "B室",
+      "capacity": 6,
+      "has_projector": false,
+      "available": true
+    },
+    {
+      "name": "C室",
+      "capacity": 10,
+      "has_projector": true,
+      "available": false
+    }
+  ],
+  "note": "未来若搭建隔离测试环境，可让查询工具返回这份资料。当前文件不是应用请求或实际响应。"
+}
