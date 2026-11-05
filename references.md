@@ -1,6 +1,6 @@
 # 参考资料：平台文档与 Agent 评测实践
 
-以下资料在 2026-11-04 核查。平台文档用于确认产品能力和版本条件；工程文章用于理解评价方法和组织实践。它们不代表本文项目已经启用相应功能。
+资料在 2026-11-04 初核；2026-11-05 再次核对本轮涉及的取数、结果统计、脱敏、版本迁移与选型资料。平台文档用于确认产品能力和版本条件；工程文章用于理解评价方法和组织实践。它们不代表本文项目已经启用相应功能。
 
 ## Langfuse 接入、实验与评估器
 
@@ -47,3 +47,17 @@
 - [Score数据模型](https://langfuse.com/docs/evaluation/scores/data-model)：API/EVAL/ANNOTATION来源及可选comment字段。
 - [Python SDK v5.1.0的DatasetClient](https://github.com/langfuse/langfuse-python/blob/v5.1.0/langfuse/_client/datasets.py#L77)：固定版本源码仍定义run_experiment，不与已删除的get/delete helper混淆。
 - [W3C Trace Context](https://www.w3.org/TR/trace-context/)与[OTel Python传播](https://opentelemetry.io/docs/languages/python/propagation/)：传播上下文和采样标志，通用示例应使用propagator。
+
+## 本轮补充：输入边界与结果完整性
+
+- [Observation 级评估器的取数范围](https://langfuse.com/docs/evaluation/evaluation-methods/llm-as-a-judge#data-available-to-observation-level-evaluators)：不自动读取同一 Trace 的子节点与兄弟节点。
+- [评估器迁移与映射](https://langfuse.com/faq/all/llm-as-a-judge-migration)：跨观测材料的组织，以及实验上下文的映射。
+- [Python SDK v5.1.0 实验实现](https://github.com/langfuse/langfuse-python/blob/v5.1.0/langfuse/_client/client.py#L2725)：异常项与最终 item_results 的关系。固定版本静态分析，不代表本文项目已经部署该版本。
+- [实验与 CI/CD](https://langfuse.com/docs/evaluation/experiments/experiments-ci-cd)：缺样本、重复 ID、执行失败和无效结果的处理。本文未引入自动发布门禁。
+- [Masking](https://langfuse.com/docs/observability/features/masking)：客户端脱敏钩子的作用范围，其他出口需分别处理。
+- [自托管 v3 到 v4](https://langfuse.com/self-hosting/upgrade/upgrade-guides/upgrade-v3-to-v4)：legacy、dual、events_only 模式与迁移步骤。
+
+## 裁判输入复核
+
+- 再次核对 [LLM-as-a-Judge 取数范围](https://langfuse.com/docs/evaluation/evaluation-methods/llm-as-a-judge#data-available-to-observation-level-evaluators)与[旧评估器迁移](https://langfuse.com/faq/all/llm-as-a-judge-migration)。新的目标观测取数与旧具名观测映射应区分。
+- 正文实际输入表来自项目配置及既有测试裁判输入的只读抽查；内部资源 ID、模型标识、业务原文与原始响应不放入公开材料。

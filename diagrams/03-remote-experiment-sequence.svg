@@ -1,68 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1460" viewBox="0 0 1440 1460" role="img"><title>一次远程实验怎样完成</title><desc>此图展示 HTTP/SSE 分支；响应、观测导出和业务投影没有全局到达顺序。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1560" viewBox="0 0 1440 1560" role="img"><title>一次远程实验怎样流转</title><desc>展开展示 HTTP/SSE 分支；受理、观测导出与评分各自异步进行。</desc>
 <style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC","Segoe UI",sans-serif}</style>
 <defs><marker id="a0" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#356eb2"/></marker><marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#167f7d"/></marker><marker id="a2" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a87024"/></marker><marker id="a3" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#775a9c"/></marker><marker id="a4" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#203848"/></marker><marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#5b7280"/></marker></defs>
-<rect width="1440" height="1460" fill="#fbfcfc"/>
-<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">一次远程实验怎样完成</text>
-<text x="48" y="108" font-size="21" fill="#5b7280" text-anchor="start">此图展示 HTTP/SSE 分支；响应、观测导出和业务投影没有全局到达顺序。</text>
+<rect width="1440" height="1560" fill="#fbfcfc"/>
+<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">一次远程实验怎样流转</text>
+<text x="48" y="110" font-size="21" fill="#5b7280" text-anchor="start">展开展示 HTTP/SSE 分支；受理、观测导出与评分各自异步进行。</text>
 <rect x="1240" y="36" width="150" height="40" rx="20" fill="#edf2f4" stroke="none" stroke-width="2"/>
-<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">执行时序</text>
-<line x1="48" x2="1392" y1="140" y2="140" stroke="#dce5e9"/>
-<rect x="20" y="175" width="220" height="65" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="130" y="216" font-size="24" fill="#356eb2" text-anchor="middle" font-weight="700">UI / Skill</text>
-<line x1="130" y1="240" x2="130" y2="1260" stroke="#c7d6dd" stroke-width="2" stroke-dasharray="6 7"/>
-<rect x="315" y="175" width="220" height="65" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="425" y="216" font-size="24" fill="#356eb2" text-anchor="middle" font-weight="700">Langfuse</text>
-<line x1="425" y1="240" x2="425" y2="1260" stroke="#c7d6dd" stroke-width="2" stroke-dasharray="6 7"/>
-<rect x="610" y="175" width="220" height="65" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="720" y="216" font-size="24" fill="#356eb2" text-anchor="middle" font-weight="700">BFF / runner</text>
-<line x1="720" y1="240" x2="720" y2="1260" stroke="#c7d6dd" stroke-width="2" stroke-dasharray="6 7"/>
-<rect x="905" y="175" width="220" height="65" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="1015" y="216" font-size="24" fill="#356eb2" text-anchor="middle" font-weight="700">Agent 应用</text>
-<line x1="1015" y1="240" x2="1015" y2="1260" stroke="#c7d6dd" stroke-width="2" stroke-dasharray="6 7"/>
-<rect x="1200" y="175" width="220" height="65" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="1310" y="216" font-size="24" fill="#356eb2" text-anchor="middle" font-weight="700">平台评估任务</text>
-<line x1="1310" y1="240" x2="1310" y2="1260" stroke="#c7d6dd" stroke-width="2" stroke-dasharray="6 7"/>
-<polyline points="130,290 425,290" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="175.5" y="257" width="204" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="277.5" y="276" font-size="19" fill="#356eb2" text-anchor="middle">选择测试集，发起实验</text>
-<polyline points="425,360 720,360" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="457.96" y="327" width="229.08" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="572.5" y="346" font-size="19" fill="#356eb2" text-anchor="middle">Dataset 信息与运行配置</text>
-<polyline points="720,430 425,430" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round" stroke-dasharray="8 5"/>
-<rect x="512.11" y="397" width="120.78" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="572.5" y="416" font-size="19" fill="#356eb2" text-anchor="middle">202：已受理</text>
-<text x="675" y="480" font-size="19" fill="#5b7280" text-anchor="start">后台任务可在受理响应到达前开始</text>
-<polyline points="720,540 425,540" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="470.5" y="507" width="204" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="572.5" y="526" font-size="19" fill="#356eb2" text-anchor="middle">读取样本及指定的版本</text>
-<polyline points="720,610 1015,610" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
-<rect x="750.68" y="577" width="233.64000000000001" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="867.5" y="596" font-size="19" fill="#167f7d" text-anchor="middle">逐条问题 + traceparent</text>
-<rect x="48" y="656" width="1344" height="242" rx="10" fill="none" stroke="#c8dcd9" stroke-width="2"/>
-<text x="65" y="684" font-size="18" fill="#167f7d" text-anchor="start" font-weight="700">以下消息可并行发生 / 异步到达</text>
-<polyline points="1015,725 720,725" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round" stroke-dasharray="8 5"/>
-<rect x="769.11" y="692" width="196.78" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="867.5" y="711" font-size="19" fill="#167f7d" text-anchor="middle">SSE：回答与完成状态</text>
-<polyline points="1015,795 425,795" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round" stroke-dasharray="8 5"/>
-<rect x="583.61" y="762" width="272.78000000000003" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="720.0" y="781" font-size="19" fill="#167f7d" text-anchor="middle">模型 / 工具观测（异步导出）</text>
-<polyline points="720,865 425,865" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round" stroke-dasharray="8 5"/>
-<rect x="426.61" y="832" width="291.78000000000003" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="572.5" y="851" font-size="19" fill="#167f7d" text-anchor="middle">业务根观测 / 状态投影（异步）</text>
-<polyline points="720,955 425,955" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="459.48" y="922" width="226.04000000000002" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="572.5" y="941" font-size="19" fill="#356eb2" text-anchor="middle">SDK 关联样本与任务输出</text>
-<polyline points="425,1045 1310,1045" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
-<rect x="753.72" y="1012" width="227.56" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="867.5" y="1031" font-size="19" fill="#775a9c" text-anchor="middle">按 Rule 和可用输入排程</text>
-<polyline points="1310,1115 425,1115" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round" stroke-dasharray="8 5"/>
-<rect x="763.22" y="1082" width="208.56" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="867.5" y="1101" font-size="19" fill="#775a9c" text-anchor="middle">评价完成后保存 Score</text>
-<polyline points="130,1215 425,1215" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="179.11" y="1182" width="196.78" height="28" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="277.5" y="1201" font-size="19" fill="#356eb2" text-anchor="middle">读取 / 对账本次结果</text>
-<rect x="48" y="1300" width="1344" height="105" rx="12" fill="#fff7e9" stroke="#e8d6b8" stroke-width="2"/>
-<text x="68" y="1332" font-size="21" fill="#a87024" text-anchor="start">SSE 完成、观测入库与评分完成分别检查。规则不保证等待所有子观测到齐。</text>
-<text x="68" y="1363" font-size="21" fill="#a87024" text-anchor="start">首次读取时，实验可能尚未完成或仍有缺分。</text>
-<text x="48" y="1438" font-size="17" fill="#5b7280" text-anchor="start">SDK 在任务生命周期中管理关联；图示不把返回与导出强制解释成同步入库顺序。</text>
+<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">项目时序</text>
+<line x1="48" x2="1392" y1="144" y2="144" stroke="#dce5e9"/>
+<rect x="25" y="190" width="230" height="66" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="140" y="232" font-size="23" fill="#356eb2" text-anchor="middle" font-weight="700">UI / Skill</text>
+<line x1="140" x2="140" y1="256" y2="1370" stroke="#c5d3da" stroke-dasharray="6 7"/>
+<rect x="315" y="190" width="230" height="66" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="430" y="232" font-size="23" fill="#356eb2" text-anchor="middle" font-weight="700">Langfuse</text>
+<line x1="430" x2="430" y1="256" y2="1370" stroke="#c5d3da" stroke-dasharray="6 7"/>
+<rect x="605" y="190" width="230" height="66" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="720" y="232" font-size="23" fill="#356eb2" text-anchor="middle" font-weight="700">BFF / runner</text>
+<line x1="720" x2="720" y1="256" y2="1370" stroke="#c5d3da" stroke-dasharray="6 7"/>
+<rect x="895" y="190" width="230" height="66" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="1010" y="232" font-size="23" fill="#356eb2" text-anchor="middle" font-weight="700">Agent 应用</text>
+<line x1="1010" x2="1010" y1="256" y2="1370" stroke="#c5d3da" stroke-dasharray="6 7"/>
+<rect x="1185" y="190" width="230" height="66" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="1300" y="232" font-size="23" fill="#356eb2" text-anchor="middle" font-weight="700">平台裁判任务</text>
+<line x1="1300" x2="1300" y1="256" y2="1370" stroke="#c5d3da" stroke-dasharray="6 7"/>
+<polyline points="140,320 430,320" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<rect x="214.0" y="281" width="142" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="285.0" y="302" font-size="21" fill="#356eb2" text-anchor="middle">触发远程实验</text>
+<polyline points="430,420 720,420" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round"/>
+<rect x="443.94" y="381" width="262.12" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="575.0" y="402" font-size="21" fill="#a87024" text-anchor="middle">Dataset 信息 + payload</text>
+<polyline points="720,510 430,510" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<rect x="502.32" y="471" width="145.36" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="575.0" y="492" font-size="21" fill="#a87024" text-anchor="middle">受理返回 202</text>
+<polyline points="720,620 430,620" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<rect x="462.63" y="581" width="224.74" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="575.0" y="602" font-size="21" fill="#356eb2" text-anchor="middle">读取 Dataset / 版本</text>
+<polyline points="430,705 720,705" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<rect x="525.0" y="666" width="100" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="575.0" y="687" font-size="21" fill="#356eb2" text-anchor="middle">返回样本</text>
+<rect x="540" y="750" width="360" height="62" rx="12" fill="#fff7e9" stroke="#e8d6b8" stroke-width="2"/>
+<text x="560" y="784" font-size="21" fill="#a87024" text-anchor="start">SDK 管理实验，task 逐题执行</text>
+<polyline points="720,870 1010,870" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<rect x="755.99" y="831" width="218.02" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="865.0" y="852" font-size="21" fill="#356eb2" text-anchor="middle">原问题 + 追踪上下文</text>
+<polyline points="1010,960 720,960" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<rect x="771.3199999999999" y="921" width="187.36" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="865.0" y="942" font-size="21" fill="#356eb2" text-anchor="middle">SSE 响应与完成态</text>
+<polyline points="1010,1050 430,1050" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<rect x="614.98" y="1011" width="210.04" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="720.0" y="1032" font-size="21" fill="#167f7d" text-anchor="middle">Agent 观测异步导出</text>
+<polyline points="720,1140 430,1140" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<rect x="444.99" y="1101" width="260.02" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="575.0" y="1122" font-size="21" fill="#167f7d" text-anchor="middle">业务状态投影 / 实验关联</text>
+<polyline points="430,1230 1300,1230" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
+<rect x="728.48" y="1191" width="273.04" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="865.0" y="1212" font-size="21" fill="#775a9c" text-anchor="middle">按 Rule 取数，执行评估器</text>
+<polyline points="1300,1310 430,1310" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<rect x="780.98" y="1271" width="168.04" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="865.0" y="1292" font-size="21" fill="#775a9c" text-anchor="middle">保存目标 Score</text>
+<polyline points="140,1390 430,1390" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<rect x="114.46000000000001" y="1351" width="341.08" height="30" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="285.0" y="1372" font-size="21" fill="#356eb2" text-anchor="middle">读取指定 Run / Score，核验归属</text>
+<text x="48" y="1538" font-size="17" fill="#5b7280" text-anchor="start">202 不代表完成；图中展开两条观测路径，不承诺它们与评分的全局先后关系。</text>
 </svg>

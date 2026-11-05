@@ -1,0 +1,8 @@
+flowchart LR
+  I[input：原问题与入口上下文] --> M[Rule / Evaluator 生效映射与 JSONPath]
+  E[expected_output：参考与来源] --> M
+  O[output：回答、状态、工具摘要及部分事实] --> M
+  T[tool_calls：标准工具调用；抽查参数为空] --> M
+  C[experiment_item_metadata：样本上下文；个别为空] --> M
+  M --> R[渲染后的裁判消息]
+  R --> J[绑定的评估模型]

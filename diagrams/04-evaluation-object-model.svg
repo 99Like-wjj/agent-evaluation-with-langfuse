@@ -1,68 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1120" viewBox="0 0 1440 1120" role="img"><title>样本、运行记录和成绩怎么对应</title><desc>同一道题可以反复运行，每次成绩都要找到本次被评价的对象。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1050" viewBox="0 0 1440 1050" role="img"><title>同一道题，每次运行都有自己的结果</title><desc>用样本身份、运行身份和目标观测关联成绩，避免混入历史同名分数。</desc>
 <style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC","Segoe UI",sans-serif}</style>
 <defs><marker id="a0" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#356eb2"/></marker><marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#167f7d"/></marker><marker id="a2" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a87024"/></marker><marker id="a3" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#775a9c"/></marker><marker id="a4" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#203848"/></marker><marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#5b7280"/></marker></defs>
-<rect width="1440" height="1120" fill="#fbfcfc"/>
-<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">样本、运行记录和成绩怎么对应</text>
-<text x="48" y="108" font-size="21" fill="#5b7280" text-anchor="start">同一道题可以反复运行，每次成绩都要找到本次被评价的对象。</text>
+<rect width="1440" height="1050" fill="#fbfcfc"/>
+<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">同一道题，每次运行都有自己的结果</text>
+<text x="48" y="110" font-size="21" fill="#5b7280" text-anchor="start">用样本身份、运行身份和目标观测关联成绩，避免混入历史同名分数。</text>
 <rect x="1240" y="36" width="150" height="40" rx="20" fill="#edf2f4" stroke="none" stroke-width="2"/>
-<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">对象关系</text>
-<line x1="48" x2="1392" y1="140" y2="140" stroke="#dce5e9"/>
-<rect x="60" y="220" width="360" height="170" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="84" y="264" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">Dataset / 测试集</text>
-<text x="84" y="304" font-size="22" fill="#203848" text-anchor="start">一组任务</text>
-<text x="84" y="336" font-size="22" fill="#203848" text-anchor="start">保留固定的样本版本</text>
-<rect x="540" y="220" width="360" height="170" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="564" y="264" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">Run / 一次实验</text>
-<text x="564" y="304" font-size="22" fill="#203848" text-anchor="start">应用与模型等运行配置</text>
-<text x="564" y="336" font-size="22" fill="#203848" text-anchor="start">本次选中的测试集版本</text>
-<rect x="1020" y="220" width="360" height="170" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
-<text x="1044" y="264" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">Trace / 执行记录</text>
-<text x="1044" y="304" font-size="22" fill="#203848" text-anchor="start">一次应用执行</text>
-<text x="1044" y="336" font-size="22" fill="#203848" text-anchor="start">记录输入、输出与过程</text>
-<rect x="60" y="510" width="360" height="170" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="84" y="554" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">Item / 一条任务</text>
-<text x="84" y="594" font-size="22" fill="#203848" text-anchor="start">问题、参考、附加信息</text>
-<text x="84" y="626" font-size="22" fill="#203848" text-anchor="start">稳定的样本编号</text>
-<rect x="540" y="510" width="360" height="170" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="564" y="554" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">Run Item / 关联</text>
-<text x="564" y="594" font-size="22" fill="#203848" text-anchor="start">这道题在这次实验中的执行</text>
-<text x="564" y="626" font-size="22" fill="#203848" text-anchor="start">连接样本与实际观测</text>
-<rect x="1020" y="510" width="360" height="170" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
-<text x="1044" y="554" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">Observation / 步骤</text>
-<text x="1044" y="594" font-size="22" fill="#203848" text-anchor="start">模型、工具、检索等操作</text>
-<text x="1044" y="626" font-size="22" fill="#203848" text-anchor="start">可作为具体的评价目标</text>
-<rect x="60" y="870" width="360" height="150" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
-<text x="84" y="914" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">Evaluator / 评估器</text>
-<text x="84" y="954" font-size="22" fill="#203848" text-anchor="start">评价规则与输出定义</text>
-<text x="84" y="986" font-size="22" fill="#203848" text-anchor="start">按 Rule 选择目标和变量</text>
-<rect x="540" y="870" width="840" height="150" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
-<text x="564" y="914" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">Score / 一次评价</text>
-<text x="564" y="954" font-size="22" fill="#203848" text-anchor="start">保留评价值、可选说明及相应关联</text>
-<text x="564" y="986" font-size="22" fill="#203848" text-anchor="start">指向本次 Trace 或目标 Observation</text>
-<polyline points="420,300 540,300" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="433.0" y="263" width="94" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="480" y="283" font-size="20" fill="#356eb2" text-anchor="middle">多次运行</text>
-<polyline points="240,390 240,510" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="213.0" y="443" width="54" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="240" y="463" font-size="20" fill="#356eb2" text-anchor="middle">包含</text>
-<polyline points="720,390 720,510" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="693.0" y="443" width="54" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="720" y="463" font-size="20" fill="#356eb2" text-anchor="middle">包含</text>
-<polyline points="420,590 540,590" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="443.0" y="553" width="74" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="480" y="573" font-size="20" fill="#356eb2" text-anchor="middle">被执行</text>
-<polyline points="900,590 955,590 955,300 1020,300" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
-<polyline points="1200,390 1200,510" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
-<rect x="1163.0" y="443" width="74" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="1200" y="463" font-size="20" fill="#167f7d" text-anchor="middle">调用树</text>
-<polyline points="420,945 540,945" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
-<rect x="453.0" y="908" width="54" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="480" y="928" font-size="20" fill="#775a9c" text-anchor="middle">产生</text>
-<polyline points="1200,870 1200,680" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
-<rect x="1153.0" y="765" width="94" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="1200" y="785" font-size="20" fill="#775a9c" text-anchor="middle">评价目标</text>
-<rect x="60" y="735" width="840" height="82" rx="12" fill="#fff7e9" stroke="#e8d6b8" stroke-width="2"/>
-<text x="80" y="767" font-size="21" fill="#a87024" text-anchor="start">样本的历史来源 Trace 与本次执行 Trace 分开保存。</text>
-<text x="80" y="798" font-size="21" fill="#a87024" text-anchor="start">裁判自身的 execution Trace 也不等于被评对象。</text>
-<text x="48" y="1098" font-size="17" fill="#5b7280" text-anchor="start">Score 还支持其他评价层级；实际结果需按项目、目标、规则和版本核对。</text>
+<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">概念关系</text>
+<line x1="48" x2="1392" y1="144" y2="144" stroke="#dce5e9"/>
+<rect x="60" y="200" width="380" height="150" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="84" y="244" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">Dataset Item</text>
+<text x="84" y="284" font-size="22" fill="#203848" text-anchor="start">原问题、参考与上下文</text>
+<text x="84" y="316" font-size="22" fill="#203848" text-anchor="start">样本身份和版本</text>
+<rect x="540" y="200" width="380" height="150" rx="15" fill="#fff" stroke="#a87024" stroke-width="2"/>
+<text x="564" y="244" font-size="25" fill="#a87024" text-anchor="start" font-weight="700">Experiment / Run</text>
+<text x="564" y="284" font-size="22" fill="#203848" text-anchor="start">本次应用配置</text>
+<text x="564" y="316" font-size="22" fill="#203848" text-anchor="start">本次运行身份</text>
+<rect x="1020" y="200" width="360" height="150" rx="15" fill="#fff" stroke="#a87024" stroke-width="2"/>
+<text x="1044" y="244" font-size="25" fill="#a87024" text-anchor="start" font-weight="700">Run Item</text>
+<text x="1044" y="284" font-size="22" fill="#203848" text-anchor="start">把样本连到本次执行</text>
+<text x="1044" y="316" font-size="22" fill="#203848" text-anchor="start">保留目标关联</text>
+<polyline points="440,275 540,275" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round"/>
+<rect x="442.0" y="238" width="96" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="490" y="258" font-size="20" fill="#a87024" text-anchor="middle">参加实验</text>
+<polyline points="920,275 1020,275" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round"/>
+<rect x="60" y="500" width="380" height="150" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="84" y="544" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">Trace / Observation</text>
+<text x="84" y="584" font-size="22" fill="#203848" text-anchor="start">本次应用实际执行</text>
+<text x="84" y="616" font-size="22" fill="#203848" text-anchor="start">模型、工具与目标输出</text>
+<rect x="540" y="500" width="380" height="150" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
+<text x="564" y="544" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">Evaluator + Rule</text>
+<text x="564" y="584" font-size="22" fill="#203848" text-anchor="start">评价方法、模型和输出</text>
+<text x="564" y="616" font-size="22" fill="#203848" text-anchor="start">选择目标、映射与排程</text>
+<rect x="1020" y="500" width="360" height="150" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
+<text x="1044" y="544" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">Score</text>
+<text x="1044" y="584" font-size="22" fill="#203848" text-anchor="start">指向被评目标</text>
+<text x="1044" y="616" font-size="22" fill="#203848" text-anchor="start">保留原生值与可选说明</text>
+<polyline points="1200,350 1200,420 250,420 250,500" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<rect x="652.0" y="383" width="136" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="720" y="403" font-size="20" fill="#167f7d" text-anchor="middle">定位本次执行</text>
+<polyline points="440,575 540,575" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
+<rect x="442.0" y="538" width="96" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="490" y="558" font-size="20" fill="#775a9c" text-anchor="middle">可用材料</text>
+<polyline points="920,575 1020,575" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
+<rect x="60" y="770" width="1320" height="170" rx="12" fill="#fff7e9" stroke="#e8d6b8" stroke-width="2"/>
+<text x="80" y="804" font-size="21" fill="#a87024" text-anchor="start">区分三种 Trace：样本来源的历史 Trace、本次被评应用 Trace、裁判自己的执行 Trace。</text>
+<text x="80" y="835" font-size="21" fill="#a87024" text-anchor="start">一个 Run 可以包含多条样本；同一目标可以有多个指标的 Score。</text>
+<text x="80" y="866" font-size="21" fill="#a87024" text-anchor="start">Score 的目标不等于裁判 executionTraceId，不能按分数名称或时间接近程度认领。</text>
+<text x="48" y="1028" font-size="17" fill="#5b7280" text-anchor="start">此图说明对象职责与关联，不表示评分必须等待整棵 Trace 全部完成。</text>
 </svg>

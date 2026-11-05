@@ -1,0 +1,7 @@
+flowchart TB
+  B[BFF 业务服务：传递上下文] --> G[Agent graph 入口：绑定请求级 Callback]
+  G --> M[模型 / chain 回调与工具观测]
+  M --> L[观测导出]
+  E[持久化 execution] --> P[BFF 独立后台：按 revision 投影业务状态]
+  P -->|legacy ingestion| L
+  O[通用 OTel Middleware] -.-> C[按配置导出或仅传播上下文]

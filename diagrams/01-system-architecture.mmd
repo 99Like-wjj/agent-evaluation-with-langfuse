@@ -1,9 +1,14 @@
 flowchart TB
-  U[用户 / 测试问题] --> B[BFF：入口、会话、流式响应]
-  B --> A[Agent：模型、工具、子任务]
-  B -->|业务状态| T[Langfuse：Trace / Observation]
-  A -->|SDK 回调| T
-  D[Langfuse：Dataset / Experiment] -->|远程实验触发| B
-  T --> E[Langfuse：评估器、规则与 Score]
-  S[Skill：整理样本与设计规则] --> D
-  S <-->|发布规则 / 读结果| E
+  U[用户与测试问题] --> B[BFF 与实验 runner]
+  B --> A[Agent：模型与工具]
+  subgraph LF[Langfuse]
+    D[Dataset 与实验]
+    T[Trace 与 Observation]
+    E[评估器、Rule 与 Score]
+    T -->|目标数据| E
+  end
+  D -->|webhook 触发| B
+  B -->|业务状态投影| T
+  A -->|SDK / OTLP 上报| T
+  S[专项 Skill] -->|样本与实验操作| D
+  S <-->|配置发布与结果读取| E

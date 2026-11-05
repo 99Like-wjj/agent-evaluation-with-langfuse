@@ -1,11 +1,9 @@
 flowchart LR
-  D[Dataset：测试集版本] --> I[Item：一条任务]
-  D --> R[Run：一次实验]
-  I --> RI[Run Item：本次执行关联]
-  R --> RI
-  RI --> T[Trace：本次应用执行]
-  T --> O[Observation：具体步骤]
-  E[Evaluator 与 Rule] --> S[Score：评价值、可选说明及关联]
-  S -->|评价目标| T
-  S -->|或具体观测| O
-  ST[历史 Trace] -. 仅作样本来源 .-> I
+  D[Dataset Item：样本与版本] --> R[Experiment / Run]
+  R --> I[Run Item]
+  I --> T[本次应用 Trace / 目标 Observation]
+  T -->|可用材料| E[Evaluator + Rule]
+  E --> S[Score：值与可选说明]
+  S -. 被评目标 .-> T
+  H[历史来源 Trace] -. 来源 .-> D
+  J[裁判 execution Trace] -. 评价执行 .-> S

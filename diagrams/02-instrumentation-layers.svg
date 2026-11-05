@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1090" viewBox="0 0 1440 1090" role="img"><title>观测接入放在哪一层</title><desc>沿一次业务请求，分别处理上下文、运行时回调与最终业务状态。</desc>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC","Segoe UI",sans-serif}</style>
+<defs><marker id="a0" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#356eb2"/></marker><marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#167f7d"/></marker><marker id="a2" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a87024"/></marker><marker id="a3" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#775a9c"/></marker><marker id="a4" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#203848"/></marker><marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#5b7280"/></marker></defs>
+<rect width="1440" height="1090" fill="#fbfcfc"/>
+<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">观测接入放在哪一层</text>
+<text x="48" y="110" font-size="21" fill="#5b7280" text-anchor="start">沿一次业务请求，分别处理上下文、运行时回调与最终业务状态。</text>
+<rect x="1240" y="36" width="150" height="40" rx="20" fill="#edf2f4" stroke="none" stroke-width="2"/>
+<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">源码层级</text>
+<line x1="48" x2="1392" y1="144" y2="144" stroke="#dce5e9"/>
+<rect x="60" y="200" width="770" height="145" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="84" y="244" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">01  BFF 业务服务</text>
+<text x="84" y="284" font-size="22" fill="#203848" text-anchor="start">传递 langfuse_trace_context 与 traceparent</text>
+<rect x="940" y="200" width="440" height="145" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="964" y="244" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">接入目的</text>
+<text x="964" y="284" font-size="22" fill="#203848" text-anchor="start">让 Agent 接着记录同一次执行</text>
+<polyline points="830,272 940,272" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<rect x="60" y="400" width="770" height="145" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="84" y="444" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">02  Agent graph 入口</text>
+<text x="84" y="484" font-size="22" fill="#203848" text-anchor="start">attach_langfuse_callback → graph.with_config</text>
+<rect x="940" y="400" width="440" height="145" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="964" y="444" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">接入目的</text>
+<text x="964" y="484" font-size="22" fill="#203848" text-anchor="start">检查本次上下文，绑定请求级回调</text>
+<polyline points="830,472 940,472" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<rect x="60" y="600" width="770" height="145" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="84" y="644" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">03  模型、chain 与工具</text>
+<text x="84" y="684" font-size="22" fill="#203848" text-anchor="start">模型 / chain 回调，以及工具观测接入点</text>
+<rect x="940" y="600" width="440" height="145" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="964" y="644" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">接入目的</text>
+<text x="964" y="684" font-size="22" fill="#203848" text-anchor="start">记录可见输入、输出、耗时与错误</text>
+<polyline points="830,672 940,672" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<polyline points="445,345 445,400" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<polyline points="445,545 445,600" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<rect x="60" y="825" width="770" height="160" rx="15" fill="#fff" stroke="#a87024" stroke-width="2"/>
+<text x="84" y="869" font-size="25" fill="#a87024" text-anchor="start" font-weight="700">BFF 业务状态投影（独立后台路径）</text>
+<text x="84" y="909" font-size="22" fill="#203848" text-anchor="start">读取持久化 execution，按 revision 对账</text>
+<text x="84" y="941" font-size="22" fill="#203848" text-anchor="start">现有实现使用 legacy ingestion</text>
+<rect x="940" y="825" width="440" height="160" rx="12" fill="#fff7e9" stroke="#e8d6b8" stroke-width="2"/>
+<text x="960" y="859" font-size="21" fill="#a87024" text-anchor="start">另有通用 OTel Middleware。</text>
+<text x="960" y="890" font-size="21" fill="#a87024" text-anchor="start">可导出，也可只传播上下文；</text>
+<text x="960" y="921" font-size="21" fill="#a87024" text-anchor="start">目的端取决于配置。</text>
+<text x="48" y="1068" font-size="17" fill="#5b7280" text-anchor="start">SDK 导出与 BFF 状态投影是两条路径，不能将流结束等同于全部观测已入库。</text>
+</svg>

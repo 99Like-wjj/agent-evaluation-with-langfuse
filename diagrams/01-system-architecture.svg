@@ -1,60 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img"><title>应用与 Langfuse 怎样配合</title><desc>上面处理业务请求，下面保存执行记录、组织实验和评价结果。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1160" viewBox="0 0 1440 1160" role="img"><title>应用、Langfuse 和 Skill 各做什么</title><desc>业务请求留在应用中执行；观测、实验和评分通过各自的入口关联。</desc>
 <style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC","Segoe UI",sans-serif}</style>
 <defs><marker id="a0" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#356eb2"/></marker><marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#167f7d"/></marker><marker id="a2" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a87024"/></marker><marker id="a3" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#775a9c"/></marker><marker id="a4" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#203848"/></marker><marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#5b7280"/></marker></defs>
-<rect width="1440" height="1080" fill="#fbfcfc"/>
-<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">应用与 Langfuse 怎样配合</text>
-<text x="48" y="108" font-size="21" fill="#5b7280" text-anchor="start">上面处理业务请求，下面保存执行记录、组织实验和评价结果。</text>
+<rect width="1440" height="1160" fill="#fbfcfc"/>
+<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">应用、Langfuse 和 Skill 各做什么</text>
+<text x="48" y="110" font-size="21" fill="#5b7280" text-anchor="start">业务请求留在应用中执行；观测、实验和评分通过各自的入口关联。</text>
 <rect x="1240" y="36" width="150" height="40" rx="20" fill="#edf2f4" stroke="none" stroke-width="2"/>
 <text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">项目接线</text>
-<line x1="48" x2="1392" y1="140" y2="140" stroke="#dce5e9"/>
-<rect x="40" y="180" width="1360" height="250" rx="15" fill="#eef4f5" stroke="none" stroke-width="2"/>
-<text x="60" y="216" font-size="22" fill="#5b7280" text-anchor="start" font-weight="700">应用侧</text>
-<rect x="75" y="250" width="300" height="130" rx="15" fill="#fff" stroke="#203848" stroke-width="2"/>
-<text x="99" y="294" font-size="25" fill="#203848" text-anchor="start" font-weight="700">用户 / 测试问题</text>
-<text x="99" y="334" font-size="22" fill="#203848" text-anchor="start">提出任务和约束</text>
-<rect x="515" y="250" width="360" height="130" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="539" y="294" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">BFF 业务服务</text>
-<text x="539" y="334" font-size="22" fill="#203848" text-anchor="start">入口、会话与流式响应</text>
-<rect x="1015" y="250" width="345" height="130" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="1039" y="294" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">Agent 运行时</text>
-<text x="1039" y="334" font-size="22" fill="#203848" text-anchor="start">调用模型、工具与子任务</text>
-<polyline points="375,315 515,315" fill="none" stroke="#203848" stroke-width="2.8" marker-end="url(#a4)" stroke-linejoin="round"/>
-<rect x="418.0" y="279" width="54" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="445" y="299" font-size="20" fill="#203848" text-anchor="middle">问题</text>
-<polyline points="875,315 1015,315" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="898.0" y="279" width="94" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="945" y="299" font-size="20" fill="#356eb2" text-anchor="middle">执行任务</text>
-<rect x="40" y="560" width="1360" height="250" rx="15" fill="#eef4f5" stroke="none" stroke-width="2"/>
-<text x="60" y="596" font-size="22" fill="#5b7280" text-anchor="start" font-weight="700">Langfuse</text>
-<rect x="75" y="630" width="345" height="130" rx="15" fill="#fff" stroke="#a87024" stroke-width="2"/>
-<text x="99" y="674" font-size="25" fill="#a87024" text-anchor="start" font-weight="700">测试集与实验</text>
-<text x="99" y="714" font-size="22" fill="#203848" text-anchor="start">固定样本，记录每次运行</text>
-<rect x="545" y="630" width="345" height="130" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
-<text x="569" y="674" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">执行记录</text>
-<text x="569" y="714" font-size="22" fill="#203848" text-anchor="start">Trace 与模型、工具观测</text>
-<rect x="1015" y="630" width="345" height="130" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
-<text x="1039" y="674" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">评估器与结果</text>
-<text x="1039" y="714" font-size="22" fill="#203848" text-anchor="start">按规则评价，保存 Score</text>
-<polyline points="247,630 247,480 565,480 565,380" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round"/>
-<rect x="341.0" y="445" width="134" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="408" y="465" font-size="20" fill="#a87024" text-anchor="middle">远程实验触发</text>
-<polyline points="730,380 730,630" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
-<rect x="683.0" y="510" width="94" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="730" y="530" font-size="20" fill="#167f7d" text-anchor="middle">业务状态</text>
-<polyline points="1188,380 1188,510 815,510 815,630" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
-<rect x="956.4" y="475" width="137.2" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="1025" y="495" font-size="20" fill="#167f7d" text-anchor="middle">SDK 回调上报</text>
-<polyline points="890,695 1015,695" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
-<rect x="905.0" y="659" width="94" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="952" y="679" font-size="20" fill="#775a9c" text-anchor="middle">目标响应</text>
-<rect x="75" y="875" width="760" height="135" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="99" y="919" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">评测 Skill</text>
-<text x="99" y="959" font-size="22" fill="#203848" text-anchor="start">整理样本、设计规则、发布配置、收集结果</text>
-<polyline points="247,875 247,760" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="190.0" y="820" width="114" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="247" y="840" font-size="20" fill="#356eb2" text-anchor="middle">发布与运行</text>
-<polyline points="835,945 1190,945 1190,760" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
-<rect x="946.8" y="909" width="186.4" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
-<text x="1040" y="929" font-size="20" fill="#356eb2" text-anchor="middle">发布规则 / 读结果</text>
-<text x="48" y="1058" font-size="17" fill="#5b7280" text-anchor="start">图中展示 Langfuse 接入；通用 OTel 的其他导出目的端仍取决于实际配置。</text>
+<line x1="48" x2="1392" y1="144" y2="144" stroke="#dce5e9"/>
+<rect x="60" y="210" width="350" height="160" rx="15" fill="#fff" stroke="#203848" stroke-width="2"/>
+<text x="84" y="254" font-size="25" fill="#203848" text-anchor="start" font-weight="700">用户与测试问题</text>
+<text x="84" y="294" font-size="22" fill="#203848" text-anchor="start">提出任务</text>
+<text x="84" y="326" font-size="22" fill="#203848" text-anchor="start">保留正常业务上下文</text>
+<rect x="545" y="210" width="350" height="160" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="569" y="254" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">BFF 与 runner</text>
+<text x="569" y="294" font-size="22" fill="#203848" text-anchor="start">处理入口、身份和会话</text>
+<text x="569" y="326" font-size="22" fill="#203848" text-anchor="start">接收远程实验通知</text>
+<rect x="1030" y="210" width="350" height="160" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="1054" y="254" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">Agent 运行时</text>
+<text x="1054" y="294" font-size="22" fill="#203848" text-anchor="start">编排模型与工具</text>
+<text x="1054" y="326" font-size="22" fill="#203848" text-anchor="start">生成实际响应</text>
+<polyline points="410,290 545,290" fill="none" stroke="#203848" stroke-width="2.8" marker-end="url(#a4)" stroke-linejoin="round"/>
+<rect x="429.0" y="253" width="96" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="477" y="273" font-size="20" fill="#203848" text-anchor="middle">业务请求</text>
+<polyline points="895,290 1030,290" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<rect x="914.0" y="253" width="96" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="962" y="273" font-size="20" fill="#356eb2" text-anchor="middle">执行任务</text>
+<rect x="60" y="635" width="350" height="170" rx="15" fill="#fff" stroke="#a87024" stroke-width="2"/>
+<text x="84" y="679" font-size="25" fill="#a87024" text-anchor="start" font-weight="700">Dataset 与实验</text>
+<text x="84" y="719" font-size="22" fill="#203848" text-anchor="start">保存样本和版本</text>
+<text x="84" y="751" font-size="22" fill="#203848" text-anchor="start">记录本次运行关联</text>
+<rect x="545" y="635" width="350" height="170" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="569" y="679" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">Trace 与观测</text>
+<text x="569" y="719" font-size="22" fill="#203848" text-anchor="start">保存请求、模型、工具</text>
+<text x="569" y="751" font-size="22" fill="#203848" text-anchor="start">及业务状态</text>
+<rect x="1030" y="635" width="350" height="170" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
+<text x="1054" y="679" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">评估器与 Score</text>
+<text x="1054" y="719" font-size="22" fill="#203848" text-anchor="start">按 Rule 取数和排程</text>
+<text x="1054" y="751" font-size="22" fill="#203848" text-anchor="start">保存原生评价结果</text>
+<text x="60" y="600" font-size="22" fill="#5b7280" text-anchor="start" font-weight="700">LANGFUSE</text>
+<polyline points="235,635 235,460 610,460 610,370" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round"/>
+<rect x="326.8" y="425" width="142.4" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="398" y="445" font-size="20" fill="#a87024" text-anchor="middle">webhook 触发</text>
+<polyline points="740,370 740,635" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<rect x="672.0" y="520" width="136" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="740" y="540" font-size="20" fill="#167f7d" text-anchor="middle">业务状态投影</text>
+<polyline points="1205,370 1205,490 835,490 835,635" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<rect x="952.6" y="455" width="174.8" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="1040" y="475" font-size="20" fill="#167f7d" text-anchor="middle">SDK / OTLP 上报</text>
+<polyline points="895,720 1030,720" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
+<rect x="914.0" y="683" width="96" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="962" y="703" font-size="20" fill="#775a9c" text-anchor="middle">目标数据</text>
+<rect x="290" y="955" width="860" height="130" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="314" y="999" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">专项 Skill</text>
+<text x="314" y="1039" font-size="22" fill="#203848" text-anchor="start">整理来源与证据，设计并发布配置，启动获准实验，收集结果</text>
+<polyline points="420,955 420,880 235,880 235,805" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<rect x="205.8" y="842" width="168.4" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="290" y="862" font-size="20" fill="#356eb2" text-anchor="middle">样本 / 实验操作</text>
+<polyline points="1020,955 1020,880 1205,880 1205,805" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<rect x="1085.8" y="842" width="168.4" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="1170" y="862" font-size="20" fill="#356eb2" text-anchor="middle">规则 / 结果读取</text>
+<text x="48" y="1138" font-size="17" fill="#5b7280" text-anchor="start">通用 OTel 的目的端需按配置核对；远程触发不携带逐题业务请求。</text>
 </svg>

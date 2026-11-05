@@ -1,55 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1060" viewBox="0 0 1440 1060" role="img"><title>Agent 评测可以从这些方向展开</title><desc>从任务的成功标准和失败风险出发，选择能取得判断材料的指标。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1020" viewBox="0 0 1440 1020" role="img"><title>Agent 评测，从任务需要出发</title><desc>不同方向需要不同证据，指标集合应随业务任务调整。</desc>
 <style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC","Segoe UI",sans-serif}</style>
 <defs><marker id="a0" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#356eb2"/></marker><marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#167f7d"/></marker><marker id="a2" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a87024"/></marker><marker id="a3" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#775a9c"/></marker><marker id="a4" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#203848"/></marker><marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#5b7280"/></marker></defs>
-<rect width="1440" height="1060" fill="#fbfcfc"/>
-<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">Agent 评测可以从这些方向展开</text>
-<text x="48" y="108" font-size="21" fill="#5b7280" text-anchor="start">从任务的成功标准和失败风险出发，选择能取得判断材料的指标。</text>
+<rect width="1440" height="1020" fill="#fbfcfc"/>
+<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">Agent 评测，从任务需要出发</text>
+<text x="48" y="110" font-size="21" fill="#5b7280" text-anchor="start">不同方向需要不同证据，指标集合应随业务任务调整。</text>
 <rect x="1240" y="36" width="150" height="40" rx="20" fill="#edf2f4" stroke="none" stroke-width="2"/>
-<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">方法参考</text>
-<line x1="48" x2="1392" y1="140" y2="140" stroke="#dce5e9"/>
-<rect x="60" y="185" width="400" height="64" rx="12" fill="#eaf2f3" stroke="none" stroke-width="2"/>
-<text x="260" y="226" font-size="26" fill="#203848" text-anchor="middle" font-weight="700">结果是否可用</text>
-<rect x="520" y="185" width="400" height="64" rx="12" fill="#eaf2f3" stroke="none" stroke-width="2"/>
-<text x="720" y="226" font-size="26" fill="#203848" text-anchor="middle" font-weight="700">过程是否合理</text>
-<rect x="980" y="185" width="400" height="64" rx="12" fill="#eaf2f3" stroke="none" stroke-width="2"/>
-<text x="1180" y="226" font-size="26" fill="#203848" text-anchor="middle" font-weight="700">运行是否可靠</text>
-<rect x="60" y="290" width="400" height="155" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
-<text x="84" y="334" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">任务完成</text>
-<text x="84" y="374" font-size="22" fill="#203848" text-anchor="start">检查最终业务状态</text>
-<text x="84" y="406" font-size="22" fill="#203848" text-anchor="start">核对任务约束是否满足</text>
-<rect x="60" y="500" width="400" height="155" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
-<text x="84" y="544" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">回答质量</text>
-<text x="84" y="584" font-size="22" fill="#203848" text-anchor="start">事实、要点、约束和表达</text>
-<text x="84" y="616" font-size="22" fill="#203848" text-anchor="start">按场景定义可接受表现</text>
-<rect x="60" y="710" width="400" height="155" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
-<text x="84" y="754" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">产物可用</text>
-<text x="84" y="794" font-size="22" fill="#203848" text-anchor="start">读取并检查真实文件</text>
-<text x="84" y="826" font-size="22" fill="#203848" text-anchor="start">内容、结构、排版或媒体效果</text>
-<rect x="520" y="290" width="400" height="155" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="544" y="334" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">工具使用</text>
-<text x="544" y="374" font-size="22" fill="#203848" text-anchor="start">工具选对了吗，参数是否准确</text>
-<text x="544" y="406" font-size="22" fill="#203848" text-anchor="start">能否正确使用工具返回</text>
-<rect x="520" y="500" width="400" height="155" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="544" y="544" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">规划与多轮</text>
-<text x="544" y="584" font-size="22" fill="#203848" text-anchor="start">关键步骤、重复调用与调整</text>
-<text x="544" y="616" font-size="22" fill="#203848" text-anchor="start">约束记忆和用户修正</text>
-<rect x="520" y="710" width="400" height="155" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
-<text x="544" y="754" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">检索与依据</text>
-<text x="544" y="794" font-size="22" fill="#203848" text-anchor="start">资料是否找到，引用是否有效</text>
-<text x="544" y="826" font-size="22" fill="#203848" text-anchor="start">结论是否得到资料支持</text>
-<rect x="980" y="290" width="400" height="155" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
-<text x="1004" y="334" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">安全与权限</text>
-<text x="1004" y="374" font-size="22" fill="#203848" text-anchor="start">越权、泄露和未授权动作</text>
-<text x="1004" y="406" font-size="22" fill="#203848" text-anchor="start">结合调用记录与状态检查</text>
-<rect x="980" y="500" width="400" height="155" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
-<text x="1004" y="544" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">稳定与恢复</text>
-<text x="1004" y="584" font-size="22" fill="#203848" text-anchor="start">重复执行与异常场景</text>
-<text x="1004" y="616" font-size="22" fill="#203848" text-anchor="start">超时、失败后的恢复和续接</text>
-<rect x="980" y="710" width="400" height="155" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
-<text x="1004" y="754" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">耗时与成本</text>
-<text x="1004" y="794" font-size="22" fill="#203848" text-anchor="start">实际计时、token 和调用次数</text>
-<text x="1004" y="826" font-size="22" fill="#203848" text-anchor="start">对比资源投入与任务效果</text>
-<rect x="60" y="920" width="1320" height="80" rx="12" fill="#fff7e9" stroke="#e8d6b8" stroke-width="2"/>
-<text x="80" y="952" font-size="21" fill="#a87024" text-anchor="start">用户体验、行业要求等也可以继续加入。每项指标都应说明：评价什么、需要什么材料、发现问题后怎样改进。</text>
-<text x="48" y="1038" font-size="17" fill="#5b7280" text-anchor="start">参考 Anthropic、LangChain、Langfuse 与 Microsoft 的评测资料，结合本文任务整理。</text>
+<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">通用方法</text>
+<line x1="48" x2="1392" y1="144" y2="144" stroke="#dce5e9"/>
+<rect x="60" y="210" width="400" height="420" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="84" y="254" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">结果是否满足要求</text>
+<text x="84" y="294" font-size="22" fill="#203848" text-anchor="start">任务完成与业务状态</text>
+<text x="84" y="326" font-size="22" fill="#203848" text-anchor="start">事实、要点与指令</text>
+<text x="84" y="358" font-size="22" fill="#203848" text-anchor="start">回答是否回应问题</text>
+<text x="84" y="390" font-size="22" fill="#203848" text-anchor="start">文件及多模态产物</text>
+<text x="84" y="422" font-size="22" fill="#203848" text-anchor="start">交互、澄清与交接</text>
+<rect x="520" y="210" width="400" height="420" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="544" y="254" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">过程是否可靠</text>
+<text x="544" y="294" font-size="22" fill="#203848" text-anchor="start">工具选择和参数</text>
+<text x="544" y="326" font-size="22" fill="#203848" text-anchor="start">是否正确使用工具返回</text>
+<text x="544" y="358" font-size="22" fill="#203848" text-anchor="start">规划与必要步骤</text>
+<text x="544" y="390" font-size="22" fill="#203848" text-anchor="start">检索和引用依据</text>
+<text x="544" y="422" font-size="22" fill="#203848" text-anchor="start">多轮上下文与记忆</text>
+<rect x="980" y="210" width="400" height="420" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
+<text x="1004" y="254" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">边界和运行表现</text>
+<text x="1004" y="294" font-size="22" fill="#203848" text-anchor="start">权限与未授权动作</text>
+<text x="1004" y="326" font-size="22" fill="#203848" text-anchor="start">敏感信息与提示注入</text>
+<text x="1004" y="358" font-size="22" fill="#203848" text-anchor="start">重复运行的一致性</text>
+<text x="1004" y="390" font-size="22" fill="#203848" text-anchor="start">超时与故障恢复</text>
+<text x="1004" y="422" font-size="22" fill="#203848" text-anchor="start">耗时、token 和成本</text>
+<rect x="60" y="720" width="1320" height="180" rx="12" fill="#fff7e9" stroke="#e8d6b8" stroke-width="2"/>
+<text x="80" y="754" font-size="21" fill="#a87024" text-anchor="start">项目初期优先采用：正确性、完整性、指令遵循、相关性，每项独立评价。</text>
+<text x="80" y="785" font-size="21" fill="#a87024" text-anchor="start">这是起步范围；后续还需扩展工具、动作、状态、安全和效率等指标，并补齐相应证据。</text>
+<text x="80" y="816" font-size="21" fill="#a87024" text-anchor="start">图中列出可选方向，不表示项目已经全部实现，也不要求每道题使用全部指标。</text>
+<text x="48" y="998" font-size="17" fill="#5b7280" text-anchor="start">评价方向可以扩展；程序、模型和人工各自处理适合的问题。</text>
 </svg>

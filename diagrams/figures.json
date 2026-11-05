@@ -1,58 +1,58 @@
 [
   {
     "file": "01-system-architecture",
-    "title": "应用、观测和评测的整体关系",
-    "nature": "根据项目代码绘制；公司标识已匿名化",
+    "title": "应用、Langfuse 与 Skill 的分工",
+    "nature": "项目接线；不证明线上完整执行",
     "svg": "01-system-architecture.svg",
     "png": "01-system-architecture.png",
     "mermaid": "01-system-architecture.mmd"
   },
   {
-    "file": "02-evaluation-workflow",
-    "title": "独立测试集与完整构建的两条路径",
-    "nature": "依据 StageRunner 实际分支绘制",
-    "svg": "02-evaluation-workflow.svg",
-    "png": "02-evaluation-workflow.png",
-    "mermaid": "02-evaluation-workflow.mmd"
-  },
-  {
-    "file": "03-remote-experiment-sequence",
-    "title": "远程实验中的职责与异步到达",
-    "nature": "仅示意 HTTP/SSE 分支；内部会话分支另有路径",
-    "svg": "03-remote-experiment-sequence.svg",
-    "png": "03-remote-experiment-sequence.png",
-    "mermaid": "03-remote-experiment-sequence.mmd"
+    "file": "02-instrumentation-layers",
+    "title": "观测接入的代码层级",
+    "nature": "生产入口与调用代码的匿名说明",
+    "svg": "02-instrumentation-layers.svg",
+    "png": "02-instrumentation-layers.png",
+    "mermaid": "02-instrumentation-layers.mmd"
   },
   {
     "file": "04-evaluation-object-model",
-    "title": "测试样本、实验和成绩的关联",
-    "nature": "突出本项目使用的 Run Item / 目标观测关系",
+    "title": "样本、运行、观测和评分的关系",
+    "nature": "概念图；接口字段需与实际版本对齐",
     "svg": "04-evaluation-object-model.svg",
     "png": "04-evaluation-object-model.png",
     "mermaid": "04-evaluation-object-model.mmd"
   },
   {
     "file": "05-agent-evaluation-map",
-    "title": "Agent 评测方向与所需材料",
-    "nature": "通用方法参考；非固定数量，非项目已上线能力清单",
+    "title": "Agent 评测的可选方向",
+    "nature": "通用方法；初期优先项与后续扩展方向分开",
     "svg": "05-agent-evaluation-map.svg",
     "png": "05-agent-evaluation-map.png",
     "mermaid": "05-agent-evaluation-map.mmd"
   },
   {
-    "file": "06-skill-modules",
-    "title": "AI 判断、通用服务与平台接口",
-    "nature": "按职责展示协作；接口不与某一行服务一一绑定",
-    "svg": "06-skill-modules.svg",
-    "png": "06-skill-modules.png",
-    "mermaid": "06-skill-modules.mmd"
+    "file": "05-evaluator-inputs",
+    "title": "项目数据如何进入裁判消息",
+    "nature": "已核对配置与既有输入；仅展示字段类别",
+    "svg": "05-evaluator-inputs.svg",
+    "png": "05-evaluator-inputs.png",
+    "mermaid": "05-evaluator-inputs.mmd"
   },
   {
-    "file": "07-room-query-example",
-    "title": "会议室查询任务的合成评测示例",
-    "nature": "未执行、未评分；工具资料和回答都不是实测结果",
-    "svg": "07-room-query-example.svg",
-    "png": "07-room-query-example.png",
-    "mermaid": "07-room-query-example.mmd"
+    "file": "03-remote-experiment-sequence",
+    "title": "远程触发、执行与评分的时序",
+    "nature": "本地接线说明；不表示线上已端到端验证",
+    "svg": "03-remote-experiment-sequence.svg",
+    "png": "03-remote-experiment-sequence.png",
+    "mermaid": "03-remote-experiment-sequence.mmd"
+  },
+  {
+    "file": "02-evaluation-workflow",
+    "title": "独立 Dataset 与完整评估构建的分支",
+    "nature": "项目现行流程；build 与正式运行分开",
+    "svg": "02-evaluation-workflow.svg",
+    "png": "02-evaluation-workflow.png",
+    "mermaid": "02-evaluation-workflow.mmd"
   }
 ]
