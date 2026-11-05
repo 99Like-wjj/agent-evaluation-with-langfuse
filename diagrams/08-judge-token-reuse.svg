@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1120" viewBox="0 0 1440 1120" role="img"><title>多个裁判为什么会重复消耗 token</title><desc>先区分评价维度、模型调用次数，以及共同材料被输入了多少遍。</desc>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC","Segoe UI",sans-serif}</style>
+<defs><marker id="a0" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#356eb2"/></marker><marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#167f7d"/></marker><marker id="a2" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a87024"/></marker><marker id="a3" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#775a9c"/></marker><marker id="a4" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#203848"/></marker><marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#5b7280"/></marker></defs>
+<rect width="1440" height="1120" fill="#fbfcfc"/>
+<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">多个裁判为什么会重复消耗 token</text>
+<text x="48" y="110" font-size="21" fill="#5b7280" text-anchor="start">先区分评价维度、模型调用次数，以及共同材料被输入了多少遍。</text>
+<rect x="1240" y="36" width="150" height="40" rx="20" fill="#edf2f4" stroke="none" stroke-width="2"/>
+<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">概念示意</text>
+<line x1="48" x2="1392" y1="144" y2="144" stroke="#dce5e9"/>
+<rect x="390" y="205" width="660" height="140" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="414" y="249" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">共同材料 D</text>
+<text x="414" y="289" font-size="22" fill="#203848" text-anchor="start">原问题、参考、响应与本轮所需过程证据</text>
+<rect x="60" y="475" width="620" height="330" rx="15" fill="#fff" stroke="#a87024" stroke-width="2"/>
+<text x="84" y="519" font-size="25" fill="#a87024" text-anchor="start" font-weight="700">分别调用四个裁判</text>
+<text x="84" y="559" font-size="22" fill="#203848" text-anchor="start">D + 正确性规则 → 正确性结果</text>
+<text x="84" y="591" font-size="22" fill="#203848" text-anchor="start">D + 完整性规则 → 完整性结果</text>
+<text x="84" y="623" font-size="22" fill="#203848" text-anchor="start">D + 指令遵循规则 → 指令遵循结果</text>
+<text x="84" y="655" font-size="22" fill="#203848" text-anchor="start">D + 相关性规则 → 相关性结果</text>
+<text x="84" y="687" font-size="22" fill="#203848" text-anchor="start">共同材料重复输入：约 4D</text>
+<rect x="760" y="475" width="620" height="330" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="784" y="519" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">联合裁判：可评估的优化方向</text>
+<text x="784" y="559" font-size="22" fill="#203848" text-anchor="start">D + 多项独立判断规则</text>
+<text x="784" y="591" font-size="22" fill="#203848" text-anchor="start">一次模型调用，保留各项结果</text>
+<text x="784" y="623" font-size="22" fill="#203848" text-anchor="start">共同材料输入：约 D</text>
+<text x="784" y="655" font-size="22" fill="#203848" text-anchor="start">另需多结果解析、写入和校准</text>
+<text x="784" y="687" font-size="22" fill="#203848" text-anchor="start">不是把四项压成一个总分</text>
+<polyline points="570,345 570,405 370,405 370,475" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round"/>
+<rect x="322.0" y="370" width="96" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="370" y="390" font-size="20" fill="#a87024" text-anchor="middle">重复发送</text>
+<polyline points="870,345 870,405 1070,405 1070,475" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<rect x="1002.0" y="370" width="136" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="1070" y="390" font-size="20" fill="#167f7d" text-anchor="middle">共享同次输入</text>
+<rect x="60" y="890" width="1320" height="140" rx="12" fill="#fff7e9" stroke="#e8d6b8" stroke-width="2"/>
+<text x="80" y="924" font-size="21" fill="#a87024" text-anchor="start">4D 与 D 只比较共同输入部分，不包含规则、输出、缓存计价或重试差异。</text>
+<text x="80" y="955" font-size="21" fill="#a87024" text-anchor="start">同一 Rule 挂四个 Evaluator，不会自动变成一次联合推理；并发也不会减少重复 token。</text>
+<text x="80" y="986" font-size="21" fill="#a87024" text-anchor="start">图右是设计方向，现有 Skill 仍分别评价，尚未完成联合裁判的适配与效果验证。</text>
+<text x="48" y="1098" font-size="17" fill="#5b7280" text-anchor="start">仅为原理示意，不代表固定节省比例；合并前后都要检查证据完整性与评价可靠性。</text>
+</svg>

@@ -48,6 +48,22 @@
     "mermaid": "03-remote-experiment-sequence.mmd"
   },
   {
+    "file": "08-judge-token-reuse",
+    "title": "评估器拆分与重复 token 开销",
+    "nature": "概念设计，非实际成本或已实现能力",
+    "svg": "08-judge-token-reuse.svg",
+    "png": "08-judge-token-reuse.png",
+    "mermaid": "08-judge-token-reuse.mmd"
+  },
+  {
+    "file": "09-evaluation-cadence",
+    "title": "运行监测、发布冒烟与深入回归",
+    "nature": "建议分工，不表示已部署自动发布流程",
+    "svg": "09-evaluation-cadence.svg",
+    "png": "09-evaluation-cadence.png",
+    "mermaid": "09-evaluation-cadence.mmd"
+  },
+  {
     "file": "02-evaluation-workflow",
     "title": "独立 Dataset 与完整评估构建的分支",
     "nature": "项目现行流程；build 与正式运行分开",

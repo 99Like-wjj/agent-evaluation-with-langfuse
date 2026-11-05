@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1080" viewBox="0 0 1440 1080" role="img"><title>发版后，用冒烟集检查各场景是否可用</title><desc>运行监测、发布冒烟和深入回归各自回答不同的问题。</desc>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC","Segoe UI",sans-serif}</style>
+<defs><marker id="a0" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#356eb2"/></marker><marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#167f7d"/></marker><marker id="a2" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a87024"/></marker><marker id="a3" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#775a9c"/></marker><marker id="a4" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#203848"/></marker><marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#5b7280"/></marker></defs>
+<rect width="1440" height="1080" fill="#fbfcfc"/>
+<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">发版后，用冒烟集检查各场景是否可用</text>
+<text x="48" y="110" font-size="21" fill="#5b7280" text-anchor="start">运行监测、发布冒烟和深入回归各自回答不同的问题。</text>
+<rect x="1240" y="36" width="150" height="40" rx="20" fill="#edf2f4" stroke="none" stroke-width="2"/>
+<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">运行建议</text>
+<line x1="48" x2="1392" y1="144" y2="144" stroke="#dce5e9"/>
+<rect x="60" y="215" width="400" height="365" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="84" y="259" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">基础运行监测</text>
+<text x="84" y="299" font-size="22" fill="#203848" text-anchor="start">关注错误、超时与鉴权</text>
+<text x="84" y="331" font-size="22" fill="#203848" text-anchor="start">关注关键依赖的异常</text>
+<text x="84" y="363" font-size="22" fill="#203848" text-anchor="start">使用必要的日志、指标与观测</text>
+<text x="84" y="395" font-size="22" fill="#203848" text-anchor="start">不要求每条请求调用裁判</text>
+<rect x="520" y="215" width="400" height="365" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="544" y="259" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">发版后冒烟</text>
+<text x="544" y="299" font-size="22" fill="#203848" text-anchor="start">覆盖已确认的场景清单</text>
+<text x="544" y="331" font-size="22" fill="#203848" text-anchor="start">少量代表用例逐项跑齐</text>
+<text x="544" y="363" font-size="22" fill="#203848" text-anchor="start">检查可用性与关键动作边界</text>
+<text x="544" y="395" font-size="22" fill="#203848" text-anchor="start">减少细节，不隐藏缺测场景</text>
+<rect x="980" y="215" width="400" height="365" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
+<text x="1004" y="259" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">深入质量回归</text>
+<text x="1004" y="299" font-size="22" fill="#203848" text-anchor="start">扩展业务分支与细粒度指标</text>
+<text x="1004" y="331" font-size="22" fill="#203848" text-anchor="start">比较模型、提示词和工具变化</text>
+<text x="1004" y="363" font-size="22" fill="#203848" text-anchor="start">按风险、变更与周期安排</text>
+<text x="1004" y="395" font-size="22" fill="#203848" text-anchor="start">发现问题后回查执行证据</text>
+<rect x="60" y="690" width="1320" height="210" rx="12" fill="#fff7e9" stroke="#e8d6b8" stroke-width="2"/>
+<text x="80" y="724" font-size="21" fill="#a87024" text-anchor="start">先列场景，再选择代表用例；“覆盖场景”不等于穷尽该场景的全部分支。</text>
+<text x="80" y="755" font-size="21" fill="#a87024" text-anchor="start">发布冒烟保留关键约束和完整对账，深入回归承担更细的语义与质量比较。</text>
+<text x="80" y="786" font-size="21" fill="#a87024" text-anchor="start">线上质量评价可按已确认范围分层抽样；采样不能修正一个用途错误的 Rule。</text>
+<text x="80" y="817" font-size="21" fill="#a87024" text-anchor="start">生产冒烟使用受控身份和测试数据，防止可用性检查意外产生真实业务写操作。</text>
+<text x="48" y="1058" font-size="17" fill="#5b7280" text-anchor="start">减小规模和频次之前，先明确哪些检查必须保留、哪些工作可以按风险分层。</text>
+</svg>

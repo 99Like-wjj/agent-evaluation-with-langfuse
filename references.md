@@ -61,3 +61,11 @@
 
 - 再次核对 [LLM-as-a-Judge 取数范围](https://langfuse.com/docs/evaluation/evaluation-methods/llm-as-a-judge#data-available-to-observation-level-evaluators)与[旧评估器迁移](https://langfuse.com/faq/all/llm-as-a-judge-migration)。新的目标观测取数与旧具名观测映射应区分。
 - 正文实际输入表来自项目配置及既有测试裁判输入的只读抽查；内部资源 ID、模型标识、业务原文与原始响应不放入公开材料。
+
+## 评测开销、调度范围与发布检查
+
+- [Evaluator 与 Rule](https://langfuse.com/docs/evaluation/core-concepts#evaluators-and-rules)：评价定义、范围过滤、采样及复用；同一 Rule 挂多个评估器不等于共用一次模型调用。
+- [选择评价目标](https://langfuse.com/academy/evaluate/choosing-what-to-evaluate)：将业务目标、关键约束和运行指标分开考虑。
+- [评价与持续改进](https://langfuse.com/academy/evaluate)：代码、模型和人工的分工。
+- [SDK 实验评价接口](https://langfuse.com/docs/evaluation/experiments/experiments-via-sdk)与[Code Evaluator](https://langfuse.com/docs/evaluation/evaluation-methods/code-evaluators)：多结果接口与运行限制，不直接证明当前 Skill 已支持联合模型裁判。
+- 新章中的三张页面截图来自已有配置的只读查看。已对名称做匿名化、裁去内部导航及无关列；状态、结果数字和筛选条件含义没有更改。原始内部定位和取证过程单独保存，不随博客公开。
