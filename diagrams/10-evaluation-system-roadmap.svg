@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2240" viewBox="0 0 1440 2240" role="img"><title>从观测接入到持续评测，整套体系怎样搭起来</title><desc>先用少量场景校准方法，再扩展黄金集与自动化；运行时分别安排回归、冒烟和线上评价。</desc>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC","Segoe UI",sans-serif}</style>
+<defs><marker id="a0" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#356eb2"/></marker><marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#167f7d"/></marker><marker id="a2" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#a87024"/></marker><marker id="a3" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#775a9c"/></marker><marker id="a4" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#203848"/></marker><marker id="a5" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#5b7280"/></marker></defs>
+<rect width="1440" height="2240" fill="#fbfcfc"/>
+<text x="48" y="66" font-size="34" fill="#203848" text-anchor="start" font-weight="700">从观测接入到持续评测，整套体系怎样搭起来</text>
+<text x="48" y="110" font-size="21" fill="#5b7280" text-anchor="start">先用少量场景校准方法，再扩展黄金集与自动化；运行时分别安排回归、冒烟和线上评价。</text>
+<rect x="1240" y="36" width="150" height="40" rx="20" fill="#edf2f4" stroke="none" stroke-width="2"/>
+<text x="1315" y="64" font-size="19" fill="#5b7280" text-anchor="middle">建设流程</text>
+<line x1="48" x2="1392" y1="144" y2="144" stroke="#dce5e9"/>
+<rect x="220" y="190" width="1000" height="128" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="244" y="234" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">01  先接通观测</text>
+<text x="244" y="274" font-size="22" fill="#203848" text-anchor="start">选择平台，关联 BFF、Agent、模型与工具；确认执行证据和缺口</text>
+<rect x="220" y="350" width="1000" height="128" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="244" y="394" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">02  熟悉平台，核对样本与分数的关联</text>
+<text x="244" y="434" font-size="22" fill="#203848" text-anchor="start">Dataset → 应用执行 → Run / Trace → Score；知道结果从哪里来、评到哪里</text>
+<rect x="220" y="510" width="1000" height="160" rx="15" fill="#fff" stroke="#356eb2" stroke-width="2"/>
+<text x="244" y="554" font-size="25" fill="#356eb2" text-anchor="start" font-weight="700">03  按能力边界选择评测场景</text>
+<text x="244" y="594" font-size="22" fill="#203848" text-anchor="start">列出成功条件、关键依赖、主流程与边界；说明各项判断需要什么证据</text>
+<text x="244" y="626" font-size="22" fill="#203848" text-anchor="start">按场景组织 Dataset，评分口径相近的定义可以复用</text>
+<rect x="220" y="710" width="1000" height="192" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="244" y="754" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">04  先做少量用例，试评并校准裁判</text>
+<text x="244" y="794" font-size="22" fill="#203848" text-anchor="start">准备可信预期 → 采集真实响应 → 定制规则、提示词、映射与模型 → 小范围 Run</text>
+<text x="244" y="826" font-size="22" fill="#203848" text-anchor="start">人工核对合格、不合格与证据不足记录；检查范围、归属和实际开销</text>
+<text x="244" y="858" font-size="22" fill="#203848" text-anchor="start">诊断材料标明来源，失败与缺分逐项保留</text>
+<polyline points="720,318 720,350" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<polyline points="720,478 720,510" fill="none" stroke="#356eb2" stroke-width="2.8" marker-end="url(#a0)" stroke-linejoin="round"/>
+<polyline points="720,670 720,710" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<polyline points="720,902 720,940" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<polygon points="720,940 1130,1000 720,1060 310,1000" fill="#eef7f6" stroke="#167f7d" stroke-width="2.5"/>
+<text x="720" y="1009" font-size="25" fill="#167f7d" text-anchor="middle" font-weight="700">试评结果和人工判断对齐？</text>
+<rect x="45" y="950" width="210" height="160" rx="15" fill="#fff" stroke="#a87024" stroke-width="2"/>
+<text x="69" y="994" font-size="25" fill="#a87024" text-anchor="start" font-weight="700">未对齐时</text>
+<text x="69" y="1034" font-size="22" fill="#203848" text-anchor="start">补证据、改规则</text>
+<text x="69" y="1066" font-size="22" fill="#203848" text-anchor="start">回到少量试评</text>
+<polyline points="310,1000 255,1000" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round"/>
+<rect x="264.0" y="963" width="36" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="282" y="983" font-size="20" fill="#a87024" text-anchor="middle">否</text>
+<polyline points="150,950 150,806 220,806" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round"/>
+<polyline points="720,1060 720,1135" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<rect x="730.0" y="1086" width="36" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="748" y="1106" font-size="20" fill="#167f7d" text-anchor="middle">是</text>
+<rect x="220" y="1135" width="1000" height="192" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
+<text x="244" y="1179" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">05  扩展黄金集，把构建流程交给 Skill</text>
+<text x="244" y="1219" font-size="22" fill="#203848" text-anchor="start">按已确认场景补齐用例，保留来源与可信预期；发布读回，按预期清单对账</text>
+<text x="244" y="1251" font-size="22" fill="#203848" text-anchor="start">人工重点审用例、提示词和首次 Run；正式运行遵守范围与预算</text>
+<text x="244" y="1283" font-size="22" fill="#203848" text-anchor="start">保留样本、应用和裁判版本，审阅通过的结果才成为基线</text>
+<polyline points="720,1327 720,1344 250,1344 250,1420" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
+<polyline points="720,1327 720,1420" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<polyline points="720,1327 720,1344 1190,1344 1190,1420" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<rect x="40" y="1420" width="420" height="250" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
+<text x="64" y="1464" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">黄金集：深入质量回归</text>
+<text x="64" y="1504" font-size="22" fill="#203848" text-anchor="start">按风险、变更和约定周期运行</text>
+<text x="64" y="1536" font-size="22" fill="#203848" text-anchor="start">检查细分质量与关键约束</text>
+<text x="64" y="1568" font-size="22" fill="#203848" text-anchor="start">使用可比较的样本和评价口径</text>
+<rect x="510" y="1420" width="420" height="250" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="534" y="1464" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">06  另设全场景冒烟集</text>
+<text x="534" y="1504" font-size="22" fill="#203848" text-anchor="start">生产发版后运行代表用例</text>
+<text x="534" y="1536" font-size="22" fill="#203848" text-anchor="start">覆盖已确认场景的基本可用性</text>
+<text x="534" y="1568" font-size="22" fill="#203848" text-anchor="start">减少细节，不省关键约束</text>
+<rect x="980" y="1420" width="420" height="250" rx="15" fill="#fff" stroke="#a87024" stroke-width="2"/>
+<text x="1004" y="1464" font-size="25" fill="#a87024" text-anchor="start" font-weight="700">07  线上监测（按需）</text>
+<text x="1004" y="1504" font-size="22" fill="#203848" text-anchor="start">输入来自真实生产请求</text>
+<text x="1004" y="1536" font-size="22" fill="#203848" text-anchor="start">按规则抽样，资源允许可全量</text>
+<text x="1004" y="1568" font-size="22" fill="#203848" text-anchor="start">只评价实际传入的证据</text>
+<rect x="220" y="1760" width="1000" height="160" rx="15" fill="#fff" stroke="#167f7d" stroke-width="2"/>
+<text x="244" y="1804" font-size="25" fill="#167f7d" text-anchor="start" font-weight="700">结果复核：区分应用问题、裁判误判与证据不足</text>
+<text x="244" y="1844" font-size="22" fill="#203848" text-anchor="start">核对样本与必需指标；保留缺样本、缺分、失败和无法评分</text>
+<text x="244" y="1876" font-size="22" fill="#203848" text-anchor="start">确认原因后安排修复，不用平均分掩盖关键场景退化</text>
+<polyline points="250,1670 250,1735 370,1735 370,1760" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round"/>
+<polyline points="720,1670 720,1760" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<polyline points="1190,1670 1190,1735 1070,1735 1070,1760" fill="none" stroke="#a87024" stroke-width="2.8" marker-end="url(#a2)" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<rect x="973" y="1680" width="434" height="41" rx="0" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="1190" y="1708" font-size="19" fill="#a87024" text-anchor="middle">100% 采样 ≠ 全部评分成功</text>
+<rect x="220" y="1965" width="1000" height="160" rx="15" fill="#fff" stroke="#775a9c" stroke-width="2"/>
+<text x="244" y="2009" font-size="25" fill="#775a9c" text-anchor="start" font-weight="700">审阅后更新样本、规则与基线</text>
+<text x="244" y="2049" font-size="22" fill="#203848" text-anchor="start">真实问题先查证、脱敏，再补入相应场景；修复后的结果经审阅再纳入基线</text>
+<text x="244" y="2081" font-size="22" fill="#203848" text-anchor="start">用例或裁判发生变化时保留历史，重新验证可比性</text>
+<polyline points="720,1920 720,1965" fill="none" stroke="#167f7d" stroke-width="2.8" marker-end="url(#a1)" stroke-linejoin="round"/>
+<polyline points="720,2125 720,2170 1420,2170 1420,590 1220,590" fill="none" stroke="#775a9c" stroke-width="2.8" marker-end="url(#a3)" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<rect x="912.0" y="2150" width="256" height="29" rx="3" fill="#fbfcfc" stroke="none" stroke-width="2"/>
+<text x="1040" y="2170" font-size="20" fill="#775a9c" text-anchor="middle">回到场景选择与小规模试评</text>
+<text x="48" y="2218" font-size="17" fill="#5b7280" text-anchor="start">依据项目建设经验整理；补充试评校准与持续维护，线上全量评价为可选项，不表示自动流水线已部署。</text>
+</svg>

@@ -70,5 +70,13 @@
     "svg": "02-evaluation-workflow.svg",
     "png": "02-evaluation-workflow.png",
     "mermaid": "02-evaluation-workflow.mmd"
+  },
+  {
+    "file": "10-evaluation-system-roadmap",
+    "title": "整套评测体系的建设与持续维护",
+    "nature": "项目建设流程与补充检查；线上全量评价为可选扩展，非已部署自动流水线",
+    "svg": "10-evaluation-system-roadmap.svg",
+    "png": "10-evaluation-system-roadmap.png",
+    "mermaid": "10-evaluation-system-roadmap.mmd"
   }
 ]

@@ -1,0 +1,32 @@
+flowchart TB
+  A["01 先接通观测<br/>选择平台；关联 BFF、Agent、模型与工具<br/>确认执行证据和缺口"]
+  B["02 熟悉平台对象与关联<br/>Dataset → 应用执行 → Run / Trace → Score"]
+  C["03 按能力边界选择场景<br/>成功条件、关键依赖、边界与证据<br/>按场景组织 Dataset"]
+  D["04 少量用例试评<br/>可信预期 → 真实响应 → 规则 / 提示词 / 映射 / 模型 → Run<br/>人工校准合格、不合格与证据不足记录"]
+  G{"试评结果和人工判断对齐？"}
+  F["补证据或改规则，再做少量试评"]
+  E["05 扩展黄金集，构建流程 Skill 化<br/>重点审用例、提示词与首次 Run<br/>保留来源、版本、预算和经审阅的基线"]
+  R["黄金集：深入质量回归<br/>按风险、变更和约定周期运行"]
+  S["06 另设全场景冒烟集<br/>生产发版后检查代表场景的可用性<br/>减少细节，保留关键约束"]
+  O["07 线上监测（按需）<br/>输入来自生产请求；按规则抽样，资源允许可全量<br/>仅评价映射材料；100% 采样不保证全部评分成功"]
+  Q["结果复核<br/>应用问题 / 裁判误判 / 证据不足<br/>保留缺样本、缺分、失败与无法评分"]
+  U["查证、脱敏与审阅后更新样本、规则和基线<br/>保留历史；重新验证可比性"]
+  A --> B --> C --> D --> G
+  G -- 否 --> F --> D
+  G -- 是 --> E
+  E --> R
+  E --> S
+  E -. 按需扩展 .-> O
+  R --> Q
+  S --> Q
+  O -.-> Q
+  Q --> U
+  U -. 回到场景选择与小规模试评 .-> C
+  classDef setup fill:#edf3fc,stroke:#356eb2,color:#203848;
+  classDef check fill:#eef7f6,stroke:#167f7d,color:#203848;
+  classDef assets fill:#f4eff9,stroke:#775a9c,color:#203848;
+  classDef optional fill:#fff7e9,stroke:#a87024,color:#203848;
+  class A,B,C setup;
+  class D,G,S,Q check;
+  class E,R,U assets;
+  class F,O optional;

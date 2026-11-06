@@ -1,6 +1,6 @@
 # 参考资料：平台文档与 Agent 评测实践
 
-资料在 2026-11-04 初核；2026-11-05 再次核对本轮涉及的取数、结果统计、脱敏、版本迁移与选型资料。平台文档用于确认产品能力和版本条件；工程文章用于理解评价方法和组织实践。它们不代表本文项目已经启用相应功能。
+资料在 2026-11-04 初核；2026-11-05 再次核对本轮涉及的取数、结果统计、脱敏、版本迁移与选型资料。2026-11-06 进一步核对整套体系的建设流程、裁判校准、实验比较与线上评价。平台文档用于确认产品能力和版本条件；工程文章用于理解评价方法和组织实践。它们不代表本文项目已经启用相应功能。
 
 ## Langfuse 接入、实验与评估器
 
@@ -69,3 +69,15 @@
 - [评价与持续改进](https://langfuse.com/academy/evaluate)：代码、模型和人工的分工。
 - [SDK 实验评价接口](https://langfuse.com/docs/evaluation/experiments/experiments-via-sdk)与[Code Evaluator](https://langfuse.com/docs/evaluation/evaluation-methods/code-evaluators)：多结果接口与运行限制，不直接证明当前 Skill 已支持联合模型裁判。
 - 新章中的三张页面截图来自已有配置的只读查看。已对名称做匿名化、裁去内部导航及无关列；状态、结果数字和筛选条件含义没有更改。原始内部定位和取证过程单独保存，不随博客公开。
+
+## 评测体系的建设与维护
+
+- [选择评价目标](https://langfuse.com/academy/evaluate/choosing-what-to-evaluate)：从已观察的问题、业务目标和关键约束决定场景与指标。
+- [Dataset 的范围与参考](https://langfuse.com/academy/datasets)：测试集边界、输入、可信预期及用途。
+- [设计与验证裁判](https://langfuse.com/academy/evaluate/writing-evaluators)：人工标注、不同结果类别、证据不足与持续校准。
+- [比较实验](https://langfuse.com/docs/evaluation/experiments/compare-experiments)：可比版本、逐题退化、缺失结果和经审阅的基线。
+- [评价生产流量](https://langfuse.com/docs/evaluation/get-started/online)：目标观测、规则筛选、采样和结果查看。
+- [Rule 与 Evaluator](https://langfuse.com/docs/evaluation/core-concepts#evaluators-and-rules)：复用定义与各自的运行范围。
+- [目标观测的取数范围](https://langfuse.com/docs/evaluation/evaluation-methods/llm-as-a-judge#data-available-to-observation-level-evaluators)：逐条触发不等于读取整棵 Trace 执行树。
+
+建设章节结合项目实际推进思路和补充检查方法，没有将逐条生产评价、轻量冒烟执行器或自动发布流程声明为已经部署的能力。
